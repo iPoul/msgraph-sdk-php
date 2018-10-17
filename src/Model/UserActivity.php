@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * UserActivity File
 * PHP version 7
 *
@@ -43,7 +43,7 @@ class UserActivity extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the visualElements
     *
@@ -56,7 +56,7 @@ class UserActivity extends Entity
         $this->_propDict["visualElements"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the activitySourceHost
     *
@@ -70,7 +70,7 @@ class UserActivity extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the activitySourceHost
     *
@@ -83,7 +83,7 @@ class UserActivity extends Entity
         $this->_propDict["activitySourceHost"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the activationUrl
     *
@@ -97,7 +97,7 @@ class UserActivity extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the activationUrl
     *
@@ -110,7 +110,7 @@ class UserActivity extends Entity
         $this->_propDict["activationUrl"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the appActivityId
     *
@@ -124,7 +124,7 @@ class UserActivity extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the appActivityId
     *
@@ -137,7 +137,7 @@ class UserActivity extends Entity
         $this->_propDict["appActivityId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the appDisplayName
     *
@@ -151,7 +151,7 @@ class UserActivity extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the appDisplayName
     *
@@ -164,7 +164,7 @@ class UserActivity extends Entity
         $this->_propDict["appDisplayName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the contentUrl
     *
@@ -178,7 +178,7 @@ class UserActivity extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the contentUrl
     *
@@ -191,7 +191,7 @@ class UserActivity extends Entity
         $this->_propDict["contentUrl"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the createdDateTime
     *
@@ -209,7 +209,7 @@ class UserActivity extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the createdDateTime
     *
@@ -222,7 +222,7 @@ class UserActivity extends Entity
         $this->_propDict["createdDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the expirationDateTime
     *
@@ -240,7 +240,7 @@ class UserActivity extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the expirationDateTime
     *
@@ -253,7 +253,7 @@ class UserActivity extends Entity
         $this->_propDict["expirationDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the fallbackUrl
     *
@@ -267,7 +267,7 @@ class UserActivity extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the fallbackUrl
     *
@@ -280,7 +280,7 @@ class UserActivity extends Entity
         $this->_propDict["fallbackUrl"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the lastModifiedDateTime
     *
@@ -298,7 +298,7 @@ class UserActivity extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastModifiedDateTime
     *
@@ -311,7 +311,7 @@ class UserActivity extends Entity
         $this->_propDict["lastModifiedDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the userTimezone
     *
@@ -325,7 +325,7 @@ class UserActivity extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the userTimezone
     *
@@ -338,7 +338,7 @@ class UserActivity extends Entity
         $this->_propDict["userTimezone"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the contentInfo
     *
@@ -352,7 +352,7 @@ class UserActivity extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the contentInfo
     *
@@ -365,12 +365,13 @@ class UserActivity extends Entity
         $this->_propDict["contentInfo"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the status
-    *
-    * @return Status The status
-    */
+
+	/**
+	 * Gets the status
+	 *
+	 * @return Status The status
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getStatus()
     {
         if (array_key_exists("status", $this->_propDict)) {
@@ -383,7 +384,7 @@ class UserActivity extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the status
     *
@@ -396,9 +397,9 @@ class UserActivity extends Entity
         $this->_propDict["status"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the historyItems
      *
      * @return array The historyItems
@@ -411,8 +412,8 @@ class UserActivity extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the historyItems
     *
     * @param ActivityHistoryItem $val The historyItems
@@ -424,5 +425,5 @@ class UserActivity extends Entity
 		$this->_propDict["historyItems"] = $val;
         return $this;
     }
-    
+
 }

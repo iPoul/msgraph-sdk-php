@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * AutomaticRepliesSetting File
 * PHP version 7
 *
@@ -25,13 +25,13 @@ namespace Microsoft\Graph\Model;
 */
 class AutomaticRepliesSetting extends Entity
 {
-
-    /**
-    * Gets the status
-    * Configurations status for automatic replies. Possible values are: disabled, alwaysEnabled, scheduled.
-    *
-    * @return AutomaticRepliesStatus The status
-    */
+	/**
+	 * Gets the status
+	 * Configurations status for automatic replies. Possible values are: disabled, alwaysEnabled, scheduled.
+	 *
+	 * @return AutomaticRepliesStatus The status
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getStatus()
     {
         if (array_key_exists("status", $this->_propDict)) {
@@ -59,12 +59,13 @@ class AutomaticRepliesSetting extends Entity
          return $this;
     }
 
-    /**
-    * Gets the externalAudience
-    * The set of audience external to the signed-in user's organization who will receive the ExternalReplyMessage, if Status is AlwaysEnabled or Scheduled. Possible values are: none, contactsOnly, all.
-    *
-    * @return ExternalAudienceScope The externalAudience
-    */
+	/**
+	 * Gets the externalAudience
+	 * The set of audience external to the signed-in user's organization who will receive the ExternalReplyMessage, if Status is AlwaysEnabled or Scheduled. Possible values are: none, contactsOnly, all.
+	 *
+	 * @return ExternalAudienceScope The externalAudience
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getExternalAudience()
     {
         if (array_key_exists("externalAudience", $this->_propDict)) {

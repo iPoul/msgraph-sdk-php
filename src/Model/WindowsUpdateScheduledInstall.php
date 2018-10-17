@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * WindowsUpdateScheduledInstall File
 * PHP version 7
 *
@@ -34,13 +34,13 @@ class WindowsUpdateScheduledInstall extends WindowsUpdateInstallScheduleType
         $this->setODataType("#microsoft.graph.windowsUpdateScheduledInstall");
     }
 
-
-    /**
-    * Gets the scheduledInstallDay
-    * Scheduled Install Day in week. Possible values are: userDefined, everyday, sunday, monday, tuesday, wednesday, thursday, friday, saturday.
-    *
-    * @return WeeklySchedule The scheduledInstallDay
-    */
+	/**
+	 * Gets the scheduledInstallDay
+	 * Scheduled Install Day in week. Possible values are: userDefined, everyday, sunday, monday, tuesday, wednesday, thursday, friday, saturday.
+	 *
+	 * @return WeeklySchedule The scheduledInstallDay
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getScheduledInstallDay()
     {
         if (array_key_exists("scheduledInstallDay", $this->_propDict)) {

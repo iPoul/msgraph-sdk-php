@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * MicrosoftStoreForBusinessApp File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
             return null;
         }
     }
-    
+
     /**
     * Sets the usedLicenseCount
     * The number of Microsoft Store for Business licenses in use.
@@ -54,7 +54,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
         $this->_propDict["usedLicenseCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the totalLicenseCount
     * The total number of Microsoft Store for Business licenses.
@@ -69,7 +69,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
             return null;
         }
     }
-    
+
     /**
     * Sets the totalLicenseCount
     * The total number of Microsoft Store for Business licenses.
@@ -83,7 +83,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
         $this->_propDict["totalLicenseCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the productKey
     * The app product key
@@ -98,7 +98,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
             return null;
         }
     }
-    
+
     /**
     * Sets the productKey
     * The app product key
@@ -112,13 +112,14 @@ class MicrosoftStoreForBusinessApp extends MobileApp
         $this->_propDict["productKey"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the licenseType
-    * The app license type. Possible values are: offline, online.
-    *
-    * @return MicrosoftStoreForBusinessLicenseType The licenseType
-    */
+
+	/**
+	 * Gets the licenseType
+	 * The app license type. Possible values are: offline, online.
+	 *
+	 * @return MicrosoftStoreForBusinessLicenseType The licenseType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getLicenseType()
     {
         if (array_key_exists("licenseType", $this->_propDict)) {
@@ -131,7 +132,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
         }
         return null;
     }
-    
+
     /**
     * Sets the licenseType
     * The app license type. Possible values are: offline, online.
@@ -145,7 +146,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
         $this->_propDict["licenseType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the packageIdentityName
     * The app package identifier
@@ -160,7 +161,7 @@ class MicrosoftStoreForBusinessApp extends MobileApp
             return null;
         }
     }
-    
+
     /**
     * Sets the packageIdentityName
     * The app package identifier
@@ -174,5 +175,5 @@ class MicrosoftStoreForBusinessApp extends MobileApp
         $this->_propDict["packageIdentityName"] = $val;
         return $this;
     }
-    
+
 }

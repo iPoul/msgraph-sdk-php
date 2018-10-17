@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * WindowsInformationProtectionAppLearningSummary File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class WindowsInformationProtectionAppLearningSummary extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the applicationName
     * Application Name
@@ -54,13 +54,14 @@ class WindowsInformationProtectionAppLearningSummary extends Entity
         $this->_propDict["applicationName"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the applicationType
-    * Application Type. Possible values are: universal, desktop.
-    *
-    * @return ApplicationType The applicationType
-    */
+
+	/**
+	 * Gets the applicationType
+	 * Application Type. Possible values are: universal, desktop.
+	 *
+	 * @return ApplicationType The applicationType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getApplicationType()
     {
         if (array_key_exists("applicationType", $this->_propDict)) {
@@ -73,7 +74,7 @@ class WindowsInformationProtectionAppLearningSummary extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the applicationType
     * Application Type. Possible values are: universal, desktop.
@@ -87,7 +88,7 @@ class WindowsInformationProtectionAppLearningSummary extends Entity
         $this->_propDict["applicationType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the deviceCount
     * Device Count
@@ -102,7 +103,7 @@ class WindowsInformationProtectionAppLearningSummary extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the deviceCount
     * Device Count
@@ -116,5 +117,5 @@ class WindowsInformationProtectionAppLearningSummary extends Entity
         $this->_propDict["deviceCount"] = intval($val);
         return $this;
     }
-    
+
 }

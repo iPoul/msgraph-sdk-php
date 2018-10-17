@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * RecentNotebook File
 * PHP version 7
 *
@@ -118,12 +118,13 @@ class RecentNotebook extends Entity
          return $this;
     }
 
-    /**
-    * Gets the sourceService
-    * The backend store where the Notebook resides, either OneDriveForBusiness or OneDrive.
-    *
-    * @return OnenoteSourceService The sourceService
-    */
+	/**
+	 * Gets the sourceService
+	 * The backend store where the Notebook resides, either OneDriveForBusiness or OneDrive.
+	 *
+	 * @return OnenoteSourceService The sourceService
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getSourceService()
     {
         if (array_key_exists("sourceService", $this->_propDict)) {

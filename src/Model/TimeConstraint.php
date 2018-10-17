@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * TimeConstraint File
 * PHP version 7
 *
@@ -25,12 +25,12 @@ namespace Microsoft\Graph\Model;
 */
 class TimeConstraint extends Entity
 {
-
-    /**
-    * Gets the activityDomain
-    *
-    * @return ActivityDomain The activityDomain
-    */
+	/**
+	 * Gets the activityDomain
+	 *
+	 * @return ActivityDomain The activityDomain
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getActivityDomain()
     {
         if (array_key_exists("activityDomain", $this->_propDict)) {

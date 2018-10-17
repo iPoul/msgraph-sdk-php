@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * DeviceComplianceSettingState File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class DeviceComplianceSettingState extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the setting
     * The setting class name and property name.
@@ -54,7 +54,7 @@ class DeviceComplianceSettingState extends Entity
         $this->_propDict["setting"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the settingName
     * The Setting Name that is being reported
@@ -69,7 +69,7 @@ class DeviceComplianceSettingState extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the settingName
     * The Setting Name that is being reported
@@ -83,7 +83,7 @@ class DeviceComplianceSettingState extends Entity
         $this->_propDict["settingName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the deviceId
     * The Device Id that is being reported
@@ -98,7 +98,7 @@ class DeviceComplianceSettingState extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the deviceId
     * The Device Id that is being reported
@@ -112,7 +112,7 @@ class DeviceComplianceSettingState extends Entity
         $this->_propDict["deviceId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the deviceName
     * The Device Name that is being reported
@@ -127,7 +127,7 @@ class DeviceComplianceSettingState extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the deviceName
     * The Device Name that is being reported
@@ -141,7 +141,7 @@ class DeviceComplianceSettingState extends Entity
         $this->_propDict["deviceName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the userId
     * The user Id that is being reported
@@ -156,7 +156,7 @@ class DeviceComplianceSettingState extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the userId
     * The user Id that is being reported
@@ -170,7 +170,7 @@ class DeviceComplianceSettingState extends Entity
         $this->_propDict["userId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the userEmail
     * The User email address that is being reported
@@ -185,7 +185,7 @@ class DeviceComplianceSettingState extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the userEmail
     * The User email address that is being reported
@@ -199,7 +199,7 @@ class DeviceComplianceSettingState extends Entity
         $this->_propDict["userEmail"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the userName
     * The User Name that is being reported
@@ -214,7 +214,7 @@ class DeviceComplianceSettingState extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the userName
     * The User Name that is being reported
@@ -228,7 +228,7 @@ class DeviceComplianceSettingState extends Entity
         $this->_propDict["userName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the userPrincipalName
     * The User PrincipalName that is being reported
@@ -243,7 +243,7 @@ class DeviceComplianceSettingState extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the userPrincipalName
     * The User PrincipalName that is being reported
@@ -257,7 +257,7 @@ class DeviceComplianceSettingState extends Entity
         $this->_propDict["userPrincipalName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the deviceModel
     * The device model that is being reported
@@ -272,7 +272,7 @@ class DeviceComplianceSettingState extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the deviceModel
     * The device model that is being reported
@@ -286,13 +286,14 @@ class DeviceComplianceSettingState extends Entity
         $this->_propDict["deviceModel"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the state
-    * The compliance state of the setting. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
-    *
-    * @return ComplianceStatus The state
-    */
+
+	/**
+	 * Gets the state
+	 * The compliance state of the setting. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
+	 *
+	 * @return ComplianceStatus The state
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getState()
     {
         if (array_key_exists("state", $this->_propDict)) {
@@ -305,7 +306,7 @@ class DeviceComplianceSettingState extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the state
     * The compliance state of the setting. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
@@ -319,7 +320,7 @@ class DeviceComplianceSettingState extends Entity
         $this->_propDict["state"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the complianceGracePeriodExpirationDateTime
     * The DateTime when device compliance grace period expires
@@ -338,7 +339,7 @@ class DeviceComplianceSettingState extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the complianceGracePeriodExpirationDateTime
     * The DateTime when device compliance grace period expires
@@ -352,5 +353,5 @@ class DeviceComplianceSettingState extends Entity
         $this->_propDict["complianceGracePeriodExpirationDateTime"] = $val;
         return $this;
     }
-    
+
 }

@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * WindowsFirewallNetworkProfile File
 * PHP version 7
 *
@@ -25,13 +25,13 @@ namespace Microsoft\Graph\Model;
 */
 class WindowsFirewallNetworkProfile extends Entity
 {
-
-    /**
-    * Gets the firewallEnabled
-    * Turn on the firewall and advanced security enforcement. Possible values are: notConfigured, blocked, allowed.
-    *
-    * @return StateManagementSetting The firewallEnabled
-    */
+	/**
+	 * Gets the firewallEnabled
+	 * Turn on the firewall and advanced security enforcement. Possible values are: notConfigured, blocked, allowed.
+	 *
+	 * @return StateManagementSetting The firewallEnabled
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getFirewallEnabled()
     {
         if (array_key_exists("firewallEnabled", $this->_propDict)) {

@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * AndroidWorkProfileCompliancePolicy File
 * PHP version 7
 *
@@ -39,7 +39,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordRequired
     *
@@ -52,7 +52,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["passwordRequired"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordMinimumLength
     *
@@ -66,7 +66,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordMinimumLength
     *
@@ -79,12 +79,13 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["passwordMinimumLength"] = intval($val);
         return $this;
     }
-    
-    /**
-    * Gets the passwordRequiredType
-    *
-    * @return AndroidRequiredPasswordType The passwordRequiredType
-    */
+
+	/**
+	 * Gets the passwordRequiredType
+	 *
+	 * @return AndroidRequiredPasswordType The passwordRequiredType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getPasswordRequiredType()
     {
         if (array_key_exists("passwordRequiredType", $this->_propDict)) {
@@ -97,7 +98,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         }
         return null;
     }
-    
+
     /**
     * Sets the passwordRequiredType
     *
@@ -110,7 +111,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["passwordRequiredType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the passwordMinutesOfInactivityBeforeLock
     *
@@ -124,7 +125,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordMinutesOfInactivityBeforeLock
     *
@@ -137,7 +138,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["passwordMinutesOfInactivityBeforeLock"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordExpirationDays
     *
@@ -151,7 +152,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordExpirationDays
     *
@@ -164,7 +165,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["passwordExpirationDays"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordPreviousPasswordBlockCount
     *
@@ -178,7 +179,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordPreviousPasswordBlockCount
     *
@@ -191,7 +192,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["passwordPreviousPasswordBlockCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the securityPreventInstallAppsFromUnknownSources
     *
@@ -205,7 +206,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the securityPreventInstallAppsFromUnknownSources
     *
@@ -218,7 +219,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["securityPreventInstallAppsFromUnknownSources"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the securityDisableUsbDebugging
     *
@@ -232,7 +233,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the securityDisableUsbDebugging
     *
@@ -245,7 +246,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["securityDisableUsbDebugging"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the securityRequireVerifyApps
     *
@@ -259,7 +260,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the securityRequireVerifyApps
     *
@@ -272,7 +273,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["securityRequireVerifyApps"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the deviceThreatProtectionEnabled
     *
@@ -286,7 +287,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the deviceThreatProtectionEnabled
     *
@@ -299,12 +300,13 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["deviceThreatProtectionEnabled"] = boolval($val);
         return $this;
     }
-    
-    /**
-    * Gets the deviceThreatProtectionRequiredSecurityLevel
-    *
-    * @return DeviceThreatProtectionLevel The deviceThreatProtectionRequiredSecurityLevel
-    */
+
+	/**
+	 * Gets the deviceThreatProtectionRequiredSecurityLevel
+	 *
+	 * @return DeviceThreatProtectionLevel The deviceThreatProtectionRequiredSecurityLevel
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getDeviceThreatProtectionRequiredSecurityLevel()
     {
         if (array_key_exists("deviceThreatProtectionRequiredSecurityLevel", $this->_propDict)) {
@@ -317,7 +319,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         }
         return null;
     }
-    
+
     /**
     * Sets the deviceThreatProtectionRequiredSecurityLevel
     *
@@ -330,7 +332,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["deviceThreatProtectionRequiredSecurityLevel"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the securityBlockJailbrokenDevices
     *
@@ -344,7 +346,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the securityBlockJailbrokenDevices
     *
@@ -357,7 +359,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["securityBlockJailbrokenDevices"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the osMinimumVersion
     *
@@ -371,7 +373,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the osMinimumVersion
     *
@@ -384,7 +386,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["osMinimumVersion"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the osMaximumVersion
     *
@@ -398,7 +400,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the osMaximumVersion
     *
@@ -411,7 +413,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["osMaximumVersion"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the minAndroidSecurityPatchLevel
     *
@@ -425,7 +427,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the minAndroidSecurityPatchLevel
     *
@@ -438,7 +440,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["minAndroidSecurityPatchLevel"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the storageRequireEncryption
     *
@@ -452,7 +454,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the storageRequireEncryption
     *
@@ -465,7 +467,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["storageRequireEncryption"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the securityRequireSafetyNetAttestationBasicIntegrity
     *
@@ -479,7 +481,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the securityRequireSafetyNetAttestationBasicIntegrity
     *
@@ -492,7 +494,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["securityRequireSafetyNetAttestationBasicIntegrity"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the securityRequireSafetyNetAttestationCertifiedDevice
     *
@@ -506,7 +508,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the securityRequireSafetyNetAttestationCertifiedDevice
     *
@@ -519,7 +521,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["securityRequireSafetyNetAttestationCertifiedDevice"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the securityRequireGooglePlayServices
     *
@@ -533,7 +535,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the securityRequireGooglePlayServices
     *
@@ -546,7 +548,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["securityRequireGooglePlayServices"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the securityRequireUpToDateSecurityProviders
     *
@@ -560,7 +562,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the securityRequireUpToDateSecurityProviders
     *
@@ -573,7 +575,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["securityRequireUpToDateSecurityProviders"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the securityRequireCompanyPortalAppIntegrity
     *
@@ -587,7 +589,7 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
             return null;
         }
     }
-    
+
     /**
     * Sets the securityRequireCompanyPortalAppIntegrity
     *
@@ -600,5 +602,5 @@ class AndroidWorkProfileCompliancePolicy extends DeviceCompliancePolicy
         $this->_propDict["securityRequireCompanyPortalAppIntegrity"] = boolval($val);
         return $this;
     }
-    
+
 }

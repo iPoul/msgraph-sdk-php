@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * Alert File
 * PHP version 7
 *
@@ -39,7 +39,7 @@ class Alert extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the activityGroupName
     *
@@ -52,7 +52,7 @@ class Alert extends Entity
         $this->_propDict["activityGroupName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the assignedTo
     *
@@ -66,7 +66,7 @@ class Alert extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the assignedTo
     *
@@ -79,7 +79,7 @@ class Alert extends Entity
         $this->_propDict["assignedTo"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the azureSubscriptionId
     *
@@ -93,7 +93,7 @@ class Alert extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the azureSubscriptionId
     *
@@ -106,7 +106,7 @@ class Alert extends Entity
         $this->_propDict["azureSubscriptionId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the azureTenantId
     *
@@ -120,7 +120,7 @@ class Alert extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the azureTenantId
     *
@@ -133,7 +133,7 @@ class Alert extends Entity
         $this->_propDict["azureTenantId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the category
     *
@@ -147,7 +147,7 @@ class Alert extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the category
     *
@@ -160,7 +160,7 @@ class Alert extends Entity
         $this->_propDict["category"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the closedDateTime
     *
@@ -178,7 +178,7 @@ class Alert extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the closedDateTime
     *
@@ -191,9 +191,9 @@ class Alert extends Entity
         $this->_propDict["closedDateTime"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the cloudAppStates
      *
      * @return array The cloudAppStates
@@ -206,8 +206,8 @@ class Alert extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the cloudAppStates
     *
     * @param CloudAppSecurityState $val The cloudAppStates
@@ -219,7 +219,7 @@ class Alert extends Entity
 		$this->_propDict["cloudAppStates"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the comments
     *
@@ -233,7 +233,7 @@ class Alert extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the comments
     *
@@ -246,7 +246,7 @@ class Alert extends Entity
         $this->_propDict["comments"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the confidence
     *
@@ -260,7 +260,7 @@ class Alert extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the confidence
     *
@@ -273,7 +273,7 @@ class Alert extends Entity
         $this->_propDict["confidence"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the createdDateTime
     *
@@ -291,7 +291,7 @@ class Alert extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the createdDateTime
     *
@@ -304,7 +304,7 @@ class Alert extends Entity
         $this->_propDict["createdDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the description
     *
@@ -318,7 +318,7 @@ class Alert extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the description
     *
@@ -331,7 +331,7 @@ class Alert extends Entity
         $this->_propDict["description"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the detectionIds
     *
@@ -345,7 +345,7 @@ class Alert extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the detectionIds
     *
@@ -358,7 +358,7 @@ class Alert extends Entity
         $this->_propDict["detectionIds"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the eventDateTime
     *
@@ -376,7 +376,7 @@ class Alert extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the eventDateTime
     *
@@ -389,12 +389,13 @@ class Alert extends Entity
         $this->_propDict["eventDateTime"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the feedback
-    *
-    * @return AlertFeedback The feedback
-    */
+
+	/**
+	 * Gets the feedback
+	 *
+	 * @return AlertFeedback The feedback
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getFeedback()
     {
         if (array_key_exists("feedback", $this->_propDict)) {
@@ -407,7 +408,7 @@ class Alert extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the feedback
     *
@@ -420,9 +421,9 @@ class Alert extends Entity
         $this->_propDict["feedback"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the fileStates
      *
      * @return array The fileStates
@@ -435,8 +436,8 @@ class Alert extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the fileStates
     *
     * @param FileSecurityState $val The fileStates
@@ -448,9 +449,9 @@ class Alert extends Entity
 		$this->_propDict["fileStates"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the hostStates
      *
      * @return array The hostStates
@@ -463,8 +464,8 @@ class Alert extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the hostStates
     *
     * @param HostSecurityState $val The hostStates
@@ -476,7 +477,7 @@ class Alert extends Entity
 		$this->_propDict["hostStates"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the lastModifiedDateTime
     *
@@ -494,7 +495,7 @@ class Alert extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastModifiedDateTime
     *
@@ -507,9 +508,9 @@ class Alert extends Entity
         $this->_propDict["lastModifiedDateTime"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the malwareStates
      *
      * @return array The malwareStates
@@ -522,8 +523,8 @@ class Alert extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the malwareStates
     *
     * @param MalwareState $val The malwareStates
@@ -535,9 +536,9 @@ class Alert extends Entity
 		$this->_propDict["malwareStates"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the networkConnections
      *
      * @return array The networkConnections
@@ -550,8 +551,8 @@ class Alert extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the networkConnections
     *
     * @param NetworkConnection $val The networkConnections
@@ -563,9 +564,9 @@ class Alert extends Entity
 		$this->_propDict["networkConnections"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the processes
      *
      * @return array The processes
@@ -578,8 +579,8 @@ class Alert extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the processes
     *
     * @param Process $val The processes
@@ -591,7 +592,7 @@ class Alert extends Entity
 		$this->_propDict["processes"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the recommendedActions
     *
@@ -605,7 +606,7 @@ class Alert extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the recommendedActions
     *
@@ -618,9 +619,9 @@ class Alert extends Entity
         $this->_propDict["recommendedActions"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the registryKeyStates
      *
      * @return array The registryKeyStates
@@ -633,8 +634,8 @@ class Alert extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the registryKeyStates
     *
     * @param RegistryKeyState $val The registryKeyStates
@@ -646,12 +647,13 @@ class Alert extends Entity
 		$this->_propDict["registryKeyStates"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the severity
-    *
-    * @return AlertSeverity The severity
-    */
+
+	/**
+	 * Gets the severity
+	 *
+	 * @return AlertSeverity The severity
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getSeverity()
     {
         if (array_key_exists("severity", $this->_propDict)) {
@@ -664,7 +666,7 @@ class Alert extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the severity
     *
@@ -677,7 +679,7 @@ class Alert extends Entity
         $this->_propDict["severity"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the sourceMaterials
     *
@@ -691,7 +693,7 @@ class Alert extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the sourceMaterials
     *
@@ -704,12 +706,13 @@ class Alert extends Entity
         $this->_propDict["sourceMaterials"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the status
-    *
-    * @return AlertStatus The status
-    */
+
+	/**
+	 * Gets the status
+	 *
+	 * @return AlertStatus The status
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getStatus()
     {
         if (array_key_exists("status", $this->_propDict)) {
@@ -722,7 +725,7 @@ class Alert extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the status
     *
@@ -735,7 +738,7 @@ class Alert extends Entity
         $this->_propDict["status"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the tags
     *
@@ -749,7 +752,7 @@ class Alert extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the tags
     *
@@ -762,7 +765,7 @@ class Alert extends Entity
         $this->_propDict["tags"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the title
     *
@@ -776,7 +779,7 @@ class Alert extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the title
     *
@@ -789,9 +792,9 @@ class Alert extends Entity
         $this->_propDict["title"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the triggers
      *
      * @return array The triggers
@@ -804,8 +807,8 @@ class Alert extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the triggers
     *
     * @param AlertTrigger $val The triggers
@@ -817,9 +820,9 @@ class Alert extends Entity
 		$this->_propDict["triggers"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the userStates
      *
      * @return array The userStates
@@ -832,8 +835,8 @@ class Alert extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the userStates
     *
     * @param UserSecurityState $val The userStates
@@ -845,7 +848,7 @@ class Alert extends Entity
 		$this->_propDict["userStates"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the vendorInformation
     *
@@ -863,7 +866,7 @@ class Alert extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the vendorInformation
     *
@@ -876,9 +879,9 @@ class Alert extends Entity
         $this->_propDict["vendorInformation"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the vulnerabilityStates
      *
      * @return array The vulnerabilityStates
@@ -891,8 +894,8 @@ class Alert extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the vulnerabilityStates
     *
     * @param VulnerabilityState $val The vulnerabilityStates
@@ -904,5 +907,5 @@ class Alert extends Entity
 		$this->_propDict["vulnerabilityStates"] = $val;
         return $this;
     }
-    
+
 }

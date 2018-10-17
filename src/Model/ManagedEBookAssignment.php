@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * ManagedEBookAssignment File
 * PHP version 7
 *
@@ -44,7 +44,7 @@ class ManagedEBookAssignment extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the target
     * The assignment target for eBook.
@@ -58,13 +58,14 @@ class ManagedEBookAssignment extends Entity
         $this->_propDict["target"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the installIntent
-    * The install intent for eBook. Possible values are: available, required, uninstall, availableWithoutEnrollment.
-    *
-    * @return InstallIntent The installIntent
-    */
+
+	/**
+	 * Gets the installIntent
+	 * The install intent for eBook. Possible values are: available, required, uninstall, availableWithoutEnrollment.
+	 *
+	 * @return InstallIntent The installIntent
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getInstallIntent()
     {
         if (array_key_exists("installIntent", $this->_propDict)) {
@@ -77,7 +78,7 @@ class ManagedEBookAssignment extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the installIntent
     * The install intent for eBook. Possible values are: available, required, uninstall, availableWithoutEnrollment.
@@ -91,5 +92,5 @@ class ManagedEBookAssignment extends Entity
         $this->_propDict["installIntent"] = $val;
         return $this;
     }
-    
+
 }

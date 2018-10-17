@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * NetworkConnection File
 * PHP version 7
 *
@@ -156,11 +156,12 @@ class NetworkConnection extends Entity
         return $this;
     }
 
-    /**
-    * Gets the direction
-    *
-    * @return ConnectionDirection The direction
-    */
+	/**
+	 * Gets the direction
+	 *
+	 * @return ConnectionDirection The direction
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getDirection()
     {
         if (array_key_exists("direction", $this->_propDict)) {
@@ -348,11 +349,12 @@ class NetworkConnection extends Entity
         return $this;
     }
 
-    /**
-    * Gets the protocol
-    *
-    * @return SecurityNetworkProtocol The protocol
-    */
+	/**
+	 * Gets the protocol
+	 *
+	 * @return SecurityNetworkProtocol The protocol
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getProtocol()
     {
         if (array_key_exists("protocol", $this->_propDict)) {
@@ -457,11 +459,12 @@ class NetworkConnection extends Entity
         return $this;
     }
 
-    /**
-    * Gets the status
-    *
-    * @return ConnectionStatus The status
-    */
+	/**
+	 * Gets the status
+	 *
+	 * @return ConnectionStatus The status
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getStatus()
     {
         if (array_key_exists("status", $this->_propDict)) {

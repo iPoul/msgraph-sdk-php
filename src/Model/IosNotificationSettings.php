@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * IosNotificationSettings File
 * PHP version 7
 *
@@ -194,12 +194,13 @@ class IosNotificationSettings extends Entity
         return $this;
     }
 
-    /**
-    * Gets the alertType
-    * Indicates the type of alert for notifications for this app. Possible values are: deviceDefault, banner, modal, none.
-    *
-    * @return IosNotificationAlertType The alertType
-    */
+	/**
+	 * Gets the alertType
+	 * Indicates the type of alert for notifications for this app. Possible values are: deviceDefault, banner, modal, none.
+	 *
+	 * @return IosNotificationAlertType The alertType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getAlertType()
     {
         if (array_key_exists("alertType", $this->_propDict)) {

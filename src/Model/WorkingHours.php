@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * WorkingHours File
 * PHP version 7
 *
@@ -25,13 +25,13 @@ namespace Microsoft\Graph\Model;
 */
 class WorkingHours extends Entity
 {
-
-    /**
-    * Gets the daysOfWeek
-    * The days of the week on which the user works.
-    *
-    * @return DayOfWeek The daysOfWeek
-    */
+	/**
+	 * Gets the daysOfWeek
+	 * The days of the week on which the user works.
+	 *
+	 * @return DayOfWeek The daysOfWeek
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getDaysOfWeek()
     {
         if (array_key_exists("daysOfWeek", $this->_propDict)) {

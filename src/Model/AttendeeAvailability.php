@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * AttendeeAvailability File
 * PHP version 7
 *
@@ -59,12 +59,13 @@ class AttendeeAvailability extends Entity
          return $this;
     }
 
-    /**
-    * Gets the availability
-    * The availability status of the attendee. Possible values are: free, tentative, busy, oof, workingElsewhere, unknown.
-    *
-    * @return FreeBusyStatus The availability
-    */
+	/**
+	 * Gets the availability
+	 * The availability status of the attendee. Possible values are: free, tentative, busy, oof, workingElsewhere, unknown.
+	 *
+	 * @return FreeBusyStatus The availability
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getAvailability()
     {
         if (array_key_exists("availability", $this->_propDict)) {

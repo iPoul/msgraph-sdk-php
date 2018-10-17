@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * OnenotePatchContentCommand File
 * PHP version 7
 *
@@ -25,13 +25,13 @@ namespace Microsoft\Graph\Model;
 */
 class OnenotePatchContentCommand extends Entity
 {
-
-    /**
-    * Gets the action
-    * The action to perform on the target element. Possible values are: replace, append, delete, insert, or prepend.
-    *
-    * @return OnenotePatchActionType The action
-    */
+	/**
+	 * Gets the action
+	 * The action to perform on the target element. Possible values are: replace, append, delete, insert, or prepend.
+	 *
+	 * @return OnenotePatchActionType The action
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getAction()
     {
         if (array_key_exists("action", $this->_propDict)) {
@@ -115,12 +115,13 @@ class OnenotePatchContentCommand extends Entity
         return $this;
     }
 
-    /**
-    * Gets the position
-    * The location to add the supplied content, relative to the target element. Possible values are: after (default) or before.
-    *
-    * @return OnenotePatchInsertPosition The position
-    */
+	/**
+	 * Gets the position
+	 * The location to add the supplied content, relative to the target element. Possible values are: after (default) or before.
+	 *
+	 * @return OnenotePatchInsertPosition The position
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getPosition()
     {
         if (array_key_exists("position", $this->_propDict)) {

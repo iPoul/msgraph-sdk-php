@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * ItemBody File
 * PHP version 7
 *
@@ -25,13 +25,13 @@ namespace Microsoft\Graph\Model;
 */
 class ItemBody extends Entity
 {
-
-    /**
-    * Gets the contentType
-    * The type of the content. Possible values are Text and HTML.
-    *
-    * @return BodyType The contentType
-    */
+	/**
+	 * Gets the contentType
+	 * The type of the content. Possible values are Text and HTML.
+	 *
+	 * @return BodyType The contentType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getContentType()
     {
         if (array_key_exists("contentType", $this->_propDict)) {

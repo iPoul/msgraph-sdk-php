@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * Location File
 * PHP version 7
 *
@@ -176,12 +176,13 @@ class Location extends Entity
         return $this;
     }
 
-    /**
-    * Gets the locationType
-    * The type of location. Possible values are: default, conferenceRoom, homeAddress, businessAddress,geoCoordinates, streetAddress, hotel, restaurant, localBusiness, postalAddress. Read-only.
-    *
-    * @return LocationType The locationType
-    */
+	/**
+	 * Gets the locationType
+	 * The type of location. Possible values are: default, conferenceRoom, homeAddress, businessAddress,geoCoordinates, streetAddress, hotel, restaurant, localBusiness, postalAddress. Read-only.
+	 *
+	 * @return LocationType The locationType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getLocationType()
     {
         if (array_key_exists("locationType", $this->_propDict)) {
@@ -237,12 +238,13 @@ class Location extends Entity
         return $this;
     }
 
-    /**
-    * Gets the uniqueIdType
-    * For internal use only.
-    *
-    * @return LocationUniqueIdType The uniqueIdType
-    */
+	/**
+	 * Gets the uniqueIdType
+	 * For internal use only.
+	 *
+	 * @return LocationUniqueIdType The uniqueIdType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getUniqueIdType()
     {
         if (array_key_exists("uniqueIdType", $this->_propDict)) {

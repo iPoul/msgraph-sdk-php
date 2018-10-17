@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * StandardTimeZoneOffset File
 * PHP version 7
 *
@@ -87,12 +87,13 @@ class StandardTimeZoneOffset extends Entity
         return $this;
     }
 
-    /**
-    * Gets the dayOfWeek
-    * Represents the day of the week when the transition from daylight saving time to standard time.
-    *
-    * @return DayOfWeek The dayOfWeek
-    */
+	/**
+	 * Gets the dayOfWeek
+	 * Represents the day of the week when the transition from daylight saving time to standard time.
+	 *
+	 * @return DayOfWeek The dayOfWeek
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getDayOfWeek()
     {
         if (array_key_exists("dayOfWeek", $this->_propDict)) {

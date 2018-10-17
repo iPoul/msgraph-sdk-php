@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * OutlookCategory File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class OutlookCategory extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the displayName
     * A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.
@@ -54,13 +54,14 @@ class OutlookCategory extends Entity
         $this->_propDict["displayName"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the color
-    * A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors. See the note below.
-    *
-    * @return CategoryColor The color
-    */
+
+	/**
+	 * Gets the color
+	 * A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors. See the note below.
+	 *
+	 * @return CategoryColor The color
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getColor()
     {
         if (array_key_exists("color", $this->_propDict)) {
@@ -73,7 +74,7 @@ class OutlookCategory extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the color
     * A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors. See the note below.
@@ -87,5 +88,5 @@ class OutlookCategory extends Entity
         $this->_propDict["color"] = $val;
         return $this;
     }
-    
+
 }

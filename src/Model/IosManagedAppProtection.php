@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * IosManagedAppProtection File
 * PHP version 7
 *
@@ -26,12 +26,13 @@ namespace Microsoft\Graph\Model;
 */
 class IosManagedAppProtection extends TargetedManagedAppProtection
 {
-    /**
-    * Gets the appDataEncryptionType
-    * Type of encryption which should be used for data in a managed app. Possible values are: useDeviceSettings, afterDeviceRestart, whenDeviceLockedExceptOpenFiles, whenDeviceLocked.
-    *
-    * @return ManagedAppDataEncryptionType The appDataEncryptionType
-    */
+	/**
+	 * Gets the appDataEncryptionType
+	 * Type of encryption which should be used for data in a managed app. Possible values are: useDeviceSettings, afterDeviceRestart, whenDeviceLockedExceptOpenFiles, whenDeviceLocked.
+	 *
+	 * @return ManagedAppDataEncryptionType The appDataEncryptionType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getAppDataEncryptionType()
     {
         if (array_key_exists("appDataEncryptionType", $this->_propDict)) {
@@ -44,7 +45,7 @@ class IosManagedAppProtection extends TargetedManagedAppProtection
         }
         return null;
     }
-    
+
     /**
     * Sets the appDataEncryptionType
     * Type of encryption which should be used for data in a managed app. Possible values are: useDeviceSettings, afterDeviceRestart, whenDeviceLockedExceptOpenFiles, whenDeviceLocked.
@@ -58,7 +59,7 @@ class IosManagedAppProtection extends TargetedManagedAppProtection
         $this->_propDict["appDataEncryptionType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the minimumRequiredSdkVersion
     * Versions less than the specified version will block the managed app from accessing company data.
@@ -73,7 +74,7 @@ class IosManagedAppProtection extends TargetedManagedAppProtection
             return null;
         }
     }
-    
+
     /**
     * Sets the minimumRequiredSdkVersion
     * Versions less than the specified version will block the managed app from accessing company data.
@@ -87,7 +88,7 @@ class IosManagedAppProtection extends TargetedManagedAppProtection
         $this->_propDict["minimumRequiredSdkVersion"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the deployedAppCount
     * Count of apps to which the current policy is deployed.
@@ -102,7 +103,7 @@ class IosManagedAppProtection extends TargetedManagedAppProtection
             return null;
         }
     }
-    
+
     /**
     * Sets the deployedAppCount
     * Count of apps to which the current policy is deployed.
@@ -116,7 +117,7 @@ class IosManagedAppProtection extends TargetedManagedAppProtection
         $this->_propDict["deployedAppCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the faceIdBlocked
     * Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
@@ -131,7 +132,7 @@ class IosManagedAppProtection extends TargetedManagedAppProtection
             return null;
         }
     }
-    
+
     /**
     * Sets the faceIdBlocked
     * Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
@@ -145,9 +146,9 @@ class IosManagedAppProtection extends TargetedManagedAppProtection
         $this->_propDict["faceIdBlocked"] = boolval($val);
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the apps
     * List of apps to which the policy is deployed.
      *
@@ -161,8 +162,8 @@ class IosManagedAppProtection extends TargetedManagedAppProtection
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the apps
     * List of apps to which the policy is deployed.
     *
@@ -175,7 +176,7 @@ class IosManagedAppProtection extends TargetedManagedAppProtection
 		$this->_propDict["apps"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the deploymentSummary
     * Navigation property to deployment summary of the configuration.
@@ -194,7 +195,7 @@ class IosManagedAppProtection extends TargetedManagedAppProtection
         }
         return null;
     }
-    
+
     /**
     * Sets the deploymentSummary
     * Navigation property to deployment summary of the configuration.
@@ -208,5 +209,5 @@ class IosManagedAppProtection extends TargetedManagedAppProtection
         $this->_propDict["deploymentSummary"] = $val;
         return $this;
     }
-    
+
 }

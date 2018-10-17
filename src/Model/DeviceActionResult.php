@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * DeviceActionResult File
 * PHP version 7
 *
@@ -54,12 +54,13 @@ class DeviceActionResult extends Entity
         return $this;
     }
 
-    /**
-    * Gets the actionState
-    * State of the action. Possible values are: none, pending, canceled, active, done, failed, notSupported.
-    *
-    * @return ActionState The actionState
-    */
+	/**
+	 * Gets the actionState
+	 * State of the action. Possible values are: none, pending, canceled, active, done, failed, notSupported.
+	 *
+	 * @return ActionState The actionState
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getActionState()
     {
         if (array_key_exists("actionState", $this->_propDict)) {

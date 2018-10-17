@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * AppConfigurationSettingItem File
 * PHP version 7
 *
@@ -54,12 +54,13 @@ class AppConfigurationSettingItem extends Entity
         return $this;
     }
 
-    /**
-    * Gets the appConfigKeyType
-    * app configuration key type. Possible values are: stringType, integerType, realType, booleanType, tokenType.
-    *
-    * @return MdmAppConfigKeyType The appConfigKeyType
-    */
+	/**
+	 * Gets the appConfigKeyType
+	 * app configuration key type. Possible values are: stringType, integerType, realType, booleanType, tokenType.
+	 *
+	 * @return MdmAppConfigKeyType The appConfigKeyType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getAppConfigKeyType()
     {
         if (array_key_exists("appConfigKeyType", $this->_propDict)) {

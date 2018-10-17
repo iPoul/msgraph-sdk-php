@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * MobileAppAssignment File
 * PHP version 7
 *
@@ -26,12 +26,13 @@ namespace Microsoft\Graph\Model;
 */
 class MobileAppAssignment extends Entity
 {
-    /**
-    * Gets the intent
-    * The install intent defined by the admin. Possible values are: available, required, uninstall, availableWithoutEnrollment.
-    *
-    * @return InstallIntent The intent
-    */
+	/**
+	 * Gets the intent
+	 * The install intent defined by the admin. Possible values are: available, required, uninstall, availableWithoutEnrollment.
+	 *
+	 * @return InstallIntent The intent
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getIntent()
     {
         if (array_key_exists("intent", $this->_propDict)) {
@@ -44,7 +45,7 @@ class MobileAppAssignment extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the intent
     * The install intent defined by the admin. Possible values are: available, required, uninstall, availableWithoutEnrollment.
@@ -58,7 +59,7 @@ class MobileAppAssignment extends Entity
         $this->_propDict["intent"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the target
     * The target group assignment defined by the admin.
@@ -77,7 +78,7 @@ class MobileAppAssignment extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the target
     * The target group assignment defined by the admin.
@@ -91,7 +92,7 @@ class MobileAppAssignment extends Entity
         $this->_propDict["target"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the settings
     * The settings for target assignment defined by the admin.
@@ -110,7 +111,7 @@ class MobileAppAssignment extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the settings
     * The settings for target assignment defined by the admin.
@@ -124,5 +125,5 @@ class MobileAppAssignment extends Entity
         $this->_propDict["settings"] = $val;
         return $this;
     }
-    
+
 }

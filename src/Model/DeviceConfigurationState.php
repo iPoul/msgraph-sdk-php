@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * DeviceConfigurationState File
 * PHP version 7
 *
@@ -27,7 +27,7 @@ namespace Microsoft\Graph\Model;
 class DeviceConfigurationState extends Entity
 {
 
-     /** 
+     /**
      * Gets the settingStates
      *
      * @return array The settingStates
@@ -40,8 +40,8 @@ class DeviceConfigurationState extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the settingStates
     *
     * @param DeviceConfigurationSettingState $val The settingStates
@@ -53,7 +53,7 @@ class DeviceConfigurationState extends Entity
 		$this->_propDict["settingStates"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the displayName
     *
@@ -67,7 +67,7 @@ class DeviceConfigurationState extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the displayName
     *
@@ -80,7 +80,7 @@ class DeviceConfigurationState extends Entity
         $this->_propDict["displayName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the version
     *
@@ -94,7 +94,7 @@ class DeviceConfigurationState extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the version
     *
@@ -107,12 +107,13 @@ class DeviceConfigurationState extends Entity
         $this->_propDict["version"] = intval($val);
         return $this;
     }
-    
-    /**
-    * Gets the platformType
-    *
-    * @return PolicyPlatformType The platformType
-    */
+
+	/**
+	 * Gets the platformType
+	 *
+	 * @return PolicyPlatformType The platformType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getPlatformType()
     {
         if (array_key_exists("platformType", $this->_propDict)) {
@@ -125,7 +126,7 @@ class DeviceConfigurationState extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the platformType
     *
@@ -138,12 +139,13 @@ class DeviceConfigurationState extends Entity
         $this->_propDict["platformType"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the state
-    *
-    * @return ComplianceStatus The state
-    */
+
+	/**
+	 * Gets the state
+	 *
+	 * @return ComplianceStatus The state
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getState()
     {
         if (array_key_exists("state", $this->_propDict)) {
@@ -156,7 +158,7 @@ class DeviceConfigurationState extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the state
     *
@@ -169,7 +171,7 @@ class DeviceConfigurationState extends Entity
         $this->_propDict["state"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the settingCount
     *
@@ -183,7 +185,7 @@ class DeviceConfigurationState extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the settingCount
     *
@@ -196,5 +198,5 @@ class DeviceConfigurationState extends Entity
         $this->_propDict["settingCount"] = intval($val);
         return $this;
     }
-    
+
 }

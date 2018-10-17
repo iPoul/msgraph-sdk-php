@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * DefaultManagedAppProtection File
 * PHP version 7
 *
@@ -26,12 +26,13 @@ namespace Microsoft\Graph\Model;
 */
 class DefaultManagedAppProtection extends ManagedAppProtection
 {
-    /**
-    * Gets the appDataEncryptionType
-    * Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: useDeviceSettings, afterDeviceRestart, whenDeviceLockedExceptOpenFiles, whenDeviceLocked.
-    *
-    * @return ManagedAppDataEncryptionType The appDataEncryptionType
-    */
+	/**
+	 * Gets the appDataEncryptionType
+	 * Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: useDeviceSettings, afterDeviceRestart, whenDeviceLockedExceptOpenFiles, whenDeviceLocked.
+	 *
+	 * @return ManagedAppDataEncryptionType The appDataEncryptionType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getAppDataEncryptionType()
     {
         if (array_key_exists("appDataEncryptionType", $this->_propDict)) {
@@ -44,7 +45,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
         }
         return null;
     }
-    
+
     /**
     * Sets the appDataEncryptionType
     * Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: useDeviceSettings, afterDeviceRestart, whenDeviceLockedExceptOpenFiles, whenDeviceLocked.
@@ -58,7 +59,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
         $this->_propDict["appDataEncryptionType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the screenCaptureBlocked
     * Indicates whether screen capture is blocked.
@@ -73,7 +74,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
             return null;
         }
     }
-    
+
     /**
     * Sets the screenCaptureBlocked
     * Indicates whether screen capture is blocked.
@@ -87,7 +88,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
         $this->_propDict["screenCaptureBlocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the encryptAppData
     * Indicates whether managed-app data should be encrypted. (Android only)
@@ -102,7 +103,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
             return null;
         }
     }
-    
+
     /**
     * Sets the encryptAppData
     * Indicates whether managed-app data should be encrypted. (Android only)
@@ -116,7 +117,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
         $this->_propDict["encryptAppData"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the disableAppEncryptionIfDeviceEncryptionIsEnabled
     * When this setting is enabled, app level encryption is disabled if device level encryption is enabled
@@ -131,7 +132,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
             return null;
         }
     }
-    
+
     /**
     * Sets the disableAppEncryptionIfDeviceEncryptionIsEnabled
     * When this setting is enabled, app level encryption is disabled if device level encryption is enabled
@@ -145,7 +146,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
         $this->_propDict["disableAppEncryptionIfDeviceEncryptionIsEnabled"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the minimumRequiredSdkVersion
     * Versions less than the specified version will block the managed app from accessing company data.
@@ -160,7 +161,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
             return null;
         }
     }
-    
+
     /**
     * Sets the minimumRequiredSdkVersion
     * Versions less than the specified version will block the managed app from accessing company data.
@@ -174,9 +175,9 @@ class DefaultManagedAppProtection extends ManagedAppProtection
         $this->_propDict["minimumRequiredSdkVersion"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the customSettings
     * A set of string key and string value pairs to be sent to the affected users, unalterned by this service
      *
@@ -190,8 +191,8 @@ class DefaultManagedAppProtection extends ManagedAppProtection
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the customSettings
     * A set of string key and string value pairs to be sent to the affected users, unalterned by this service
     *
@@ -204,7 +205,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
 		$this->_propDict["customSettings"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the deployedAppCount
     * Count of apps to which the current policy is deployed.
@@ -219,7 +220,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
             return null;
         }
     }
-    
+
     /**
     * Sets the deployedAppCount
     * Count of apps to which the current policy is deployed.
@@ -233,7 +234,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
         $this->_propDict["deployedAppCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the minimumRequiredPatchVersion
     * Define the oldest required Android security patch level a user can have to gain secure access to the app.
@@ -248,7 +249,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
             return null;
         }
     }
-    
+
     /**
     * Sets the minimumRequiredPatchVersion
     * Define the oldest required Android security patch level a user can have to gain secure access to the app.
@@ -262,7 +263,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
         $this->_propDict["minimumRequiredPatchVersion"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the minimumWarningPatchVersion
     * Define the oldest recommended Android security patch level a user can have for secure access to the app.
@@ -277,7 +278,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
             return null;
         }
     }
-    
+
     /**
     * Sets the minimumWarningPatchVersion
     * Define the oldest recommended Android security patch level a user can have for secure access to the app.
@@ -291,7 +292,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
         $this->_propDict["minimumWarningPatchVersion"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the faceIdBlocked
     * Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
@@ -306,7 +307,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
             return null;
         }
     }
-    
+
     /**
     * Sets the faceIdBlocked
     * Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
@@ -320,9 +321,9 @@ class DefaultManagedAppProtection extends ManagedAppProtection
         $this->_propDict["faceIdBlocked"] = boolval($val);
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the apps
     * List of apps to which the policy is deployed.
      *
@@ -336,8 +337,8 @@ class DefaultManagedAppProtection extends ManagedAppProtection
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the apps
     * List of apps to which the policy is deployed.
     *
@@ -350,7 +351,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
 		$this->_propDict["apps"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the deploymentSummary
     * Navigation property to deployment summary of the configuration.
@@ -369,7 +370,7 @@ class DefaultManagedAppProtection extends ManagedAppProtection
         }
         return null;
     }
-    
+
     /**
     * Sets the deploymentSummary
     * Navigation property to deployment summary of the configuration.
@@ -383,5 +384,5 @@ class DefaultManagedAppProtection extends ManagedAppProtection
         $this->_propDict["deploymentSummary"] = $val;
         return $this;
     }
-    
+
 }

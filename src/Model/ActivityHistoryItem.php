@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * ActivityHistoryItem File
 * PHP version 7
 *
@@ -26,11 +26,12 @@ namespace Microsoft\Graph\Model;
 */
 class ActivityHistoryItem extends Entity
 {
-    /**
-    * Gets the status
-    *
-    * @return Status The status
-    */
+	/**
+	 * Gets the status
+	 *
+	 * @return Status The status
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getStatus()
     {
         if (array_key_exists("status", $this->_propDict)) {
@@ -43,7 +44,7 @@ class ActivityHistoryItem extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the status
     *
@@ -56,7 +57,7 @@ class ActivityHistoryItem extends Entity
         $this->_propDict["status"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the activeDurationSeconds
     *
@@ -70,7 +71,7 @@ class ActivityHistoryItem extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the activeDurationSeconds
     *
@@ -83,7 +84,7 @@ class ActivityHistoryItem extends Entity
         $this->_propDict["activeDurationSeconds"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the createdDateTime
     *
@@ -101,7 +102,7 @@ class ActivityHistoryItem extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the createdDateTime
     *
@@ -114,7 +115,7 @@ class ActivityHistoryItem extends Entity
         $this->_propDict["createdDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the lastActiveDateTime
     *
@@ -132,7 +133,7 @@ class ActivityHistoryItem extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastActiveDateTime
     *
@@ -145,7 +146,7 @@ class ActivityHistoryItem extends Entity
         $this->_propDict["lastActiveDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the lastModifiedDateTime
     *
@@ -163,7 +164,7 @@ class ActivityHistoryItem extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastModifiedDateTime
     *
@@ -176,7 +177,7 @@ class ActivityHistoryItem extends Entity
         $this->_propDict["lastModifiedDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the expirationDateTime
     *
@@ -194,7 +195,7 @@ class ActivityHistoryItem extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the expirationDateTime
     *
@@ -207,7 +208,7 @@ class ActivityHistoryItem extends Entity
         $this->_propDict["expirationDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the startedDateTime
     *
@@ -225,7 +226,7 @@ class ActivityHistoryItem extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the startedDateTime
     *
@@ -238,7 +239,7 @@ class ActivityHistoryItem extends Entity
         $this->_propDict["startedDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the userTimezone
     *
@@ -252,7 +253,7 @@ class ActivityHistoryItem extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the userTimezone
     *
@@ -265,7 +266,7 @@ class ActivityHistoryItem extends Entity
         $this->_propDict["userTimezone"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the activity
     *
@@ -283,7 +284,7 @@ class ActivityHistoryItem extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the activity
     *
@@ -296,5 +297,5 @@ class ActivityHistoryItem extends Entity
         $this->_propDict["activity"] = $val;
         return $this;
     }
-    
+
 }

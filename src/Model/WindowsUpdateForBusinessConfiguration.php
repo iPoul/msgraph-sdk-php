@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * WindowsUpdateForBusinessConfiguration File
 * PHP version 7
 *
@@ -26,12 +26,13 @@ namespace Microsoft\Graph\Model;
 */
 class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
 {
-    /**
-    * Gets the deliveryOptimizationMode
-    * Delivery Optimization Mode. Possible values are: userDefined, httpOnly, httpWithPeeringNat, httpWithPeeringPrivateGroup, httpWithInternetPeering, simpleDownload, bypassMode.
-    *
-    * @return WindowsDeliveryOptimizationMode The deliveryOptimizationMode
-    */
+	/**
+	 * Gets the deliveryOptimizationMode
+	 * Delivery Optimization Mode. Possible values are: userDefined, httpOnly, httpWithPeeringNat, httpWithPeeringPrivateGroup, httpWithInternetPeering, simpleDownload, bypassMode.
+	 *
+	 * @return WindowsDeliveryOptimizationMode The deliveryOptimizationMode
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getDeliveryOptimizationMode()
     {
         if (array_key_exists("deliveryOptimizationMode", $this->_propDict)) {
@@ -44,7 +45,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the deliveryOptimizationMode
     * Delivery Optimization Mode. Possible values are: userDefined, httpOnly, httpWithPeeringNat, httpWithPeeringPrivateGroup, httpWithInternetPeering, simpleDownload, bypassMode.
@@ -58,13 +59,14 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         $this->_propDict["deliveryOptimizationMode"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the prereleaseFeatures
-    * The pre-release features. Possible values are: userDefined, settingsOnly, settingsAndExperimentations, notAllowed.
-    *
-    * @return PrereleaseFeatures The prereleaseFeatures
-    */
+
+	/**
+	 * Gets the prereleaseFeatures
+	 * The pre-release features. Possible values are: userDefined, settingsOnly, settingsAndExperimentations, notAllowed.
+	 *
+	 * @return PrereleaseFeatures The prereleaseFeatures
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getPrereleaseFeatures()
     {
         if (array_key_exists("prereleaseFeatures", $this->_propDict)) {
@@ -77,7 +79,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the prereleaseFeatures
     * The pre-release features. Possible values are: userDefined, settingsOnly, settingsAndExperimentations, notAllowed.
@@ -91,13 +93,14 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         $this->_propDict["prereleaseFeatures"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the automaticUpdateMode
-    * Automatic update mode. Possible values are: userDefined, notifyDownload, autoInstallAtMaintenanceTime, autoInstallAndRebootAtMaintenanceTime, autoInstallAndRebootAtScheduledTime, autoInstallAndRebootWithoutEndUserControl.
-    *
-    * @return AutomaticUpdateMode The automaticUpdateMode
-    */
+
+	/**
+	 * Gets the automaticUpdateMode
+	 * Automatic update mode. Possible values are: userDefined, notifyDownload, autoInstallAtMaintenanceTime, autoInstallAndRebootAtMaintenanceTime, autoInstallAndRebootAtScheduledTime, autoInstallAndRebootWithoutEndUserControl.
+	 *
+	 * @return AutomaticUpdateMode The automaticUpdateMode
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getAutomaticUpdateMode()
     {
         if (array_key_exists("automaticUpdateMode", $this->_propDict)) {
@@ -110,7 +113,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the automaticUpdateMode
     * Automatic update mode. Possible values are: userDefined, notifyDownload, autoInstallAtMaintenanceTime, autoInstallAndRebootAtMaintenanceTime, autoInstallAndRebootAtScheduledTime, autoInstallAndRebootWithoutEndUserControl.
@@ -124,7 +127,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         $this->_propDict["automaticUpdateMode"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the microsoftUpdateServiceAllowed
     * Allow Microsoft Update Service
@@ -139,7 +142,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the microsoftUpdateServiceAllowed
     * Allow Microsoft Update Service
@@ -153,7 +156,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         $this->_propDict["microsoftUpdateServiceAllowed"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the driversExcluded
     * Exclude Windows update Drivers
@@ -168,7 +171,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the driversExcluded
     * Exclude Windows update Drivers
@@ -182,7 +185,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         $this->_propDict["driversExcluded"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the installationSchedule
     * Installation schedule
@@ -201,7 +204,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the installationSchedule
     * Installation schedule
@@ -215,7 +218,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         $this->_propDict["installationSchedule"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the qualityUpdatesDeferralPeriodInDays
     * Defer Quality Updates by these many days
@@ -230,7 +233,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the qualityUpdatesDeferralPeriodInDays
     * Defer Quality Updates by these many days
@@ -244,7 +247,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         $this->_propDict["qualityUpdatesDeferralPeriodInDays"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the featureUpdatesDeferralPeriodInDays
     * Defer Feature Updates by these many days
@@ -259,7 +262,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the featureUpdatesDeferralPeriodInDays
     * Defer Feature Updates by these many days
@@ -273,7 +276,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         $this->_propDict["featureUpdatesDeferralPeriodInDays"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the qualityUpdatesPaused
     * Pause Quality Updates
@@ -288,7 +291,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the qualityUpdatesPaused
     * Pause Quality Updates
@@ -302,7 +305,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         $this->_propDict["qualityUpdatesPaused"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the featureUpdatesPaused
     * Pause Feature Updates
@@ -317,7 +320,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the featureUpdatesPaused
     * Pause Feature Updates
@@ -331,7 +334,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         $this->_propDict["featureUpdatesPaused"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the qualityUpdatesPauseExpiryDateTime
     * Quality Updates Pause Expiry datetime
@@ -350,7 +353,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the qualityUpdatesPauseExpiryDateTime
     * Quality Updates Pause Expiry datetime
@@ -364,7 +367,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         $this->_propDict["qualityUpdatesPauseExpiryDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the featureUpdatesPauseExpiryDateTime
     * Feature Updates Pause Expiry datetime
@@ -383,7 +386,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the featureUpdatesPauseExpiryDateTime
     * Feature Updates Pause Expiry datetime
@@ -397,13 +400,14 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         $this->_propDict["featureUpdatesPauseExpiryDateTime"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the businessReadyUpdatesOnly
-    * Determines which branch devices will receive their updates from. Possible values are: userDefined, all, businessReadyOnly.
-    *
-    * @return WindowsUpdateType The businessReadyUpdatesOnly
-    */
+
+	/**
+	 * Gets the businessReadyUpdatesOnly
+	 * Determines which branch devices will receive their updates from. Possible values are: userDefined, all, businessReadyOnly.
+	 *
+	 * @return WindowsUpdateType The businessReadyUpdatesOnly
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getBusinessReadyUpdatesOnly()
     {
         if (array_key_exists("businessReadyUpdatesOnly", $this->_propDict)) {
@@ -416,7 +420,7 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the businessReadyUpdatesOnly
     * Determines which branch devices will receive their updates from. Possible values are: userDefined, all, businessReadyOnly.
@@ -430,5 +434,5 @@ class WindowsUpdateForBusinessConfiguration extends DeviceConfiguration
         $this->_propDict["businessReadyUpdatesOnly"] = $val;
         return $this;
     }
-    
+
 }

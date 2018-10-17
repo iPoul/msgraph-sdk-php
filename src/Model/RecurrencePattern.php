@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * RecurrencePattern File
 * PHP version 7
 *
@@ -25,13 +25,13 @@ namespace Microsoft\Graph\Model;
 */
 class RecurrencePattern extends Entity
 {
-
-    /**
-    * Gets the type
-    * The recurrence pattern type: daily, weekly, absoluteMonthly, relativeMonthly, absoluteYearly, relativeYearly. Required.
-    *
-    * @return RecurrencePatternType The type
-    */
+	/**
+	 * Gets the type
+	 * The recurrence pattern type: daily, weekly, absoluteMonthly, relativeMonthly, absoluteYearly, relativeYearly. Required.
+	 *
+	 * @return RecurrencePatternType The type
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getType()
     {
         if (array_key_exists("type", $this->_propDict)) {
@@ -143,12 +143,13 @@ class RecurrencePattern extends Entity
         return $this;
     }
 
-    /**
-    * Gets the daysOfWeek
-    * A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-    *
-    * @return DayOfWeek The daysOfWeek
-    */
+	/**
+	 * Gets the daysOfWeek
+	 * A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+	 *
+	 * @return DayOfWeek The daysOfWeek
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getDaysOfWeek()
     {
         if (array_key_exists("daysOfWeek", $this->_propDict)) {
@@ -176,12 +177,13 @@ class RecurrencePattern extends Entity
          return $this;
     }
 
-    /**
-    * Gets the firstDayOfWeek
-    * The first day of the week. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. Default is sunday. Required if type is weekly.
-    *
-    * @return DayOfWeek The firstDayOfWeek
-    */
+	/**
+	 * Gets the firstDayOfWeek
+	 * The first day of the week. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. Default is sunday. Required if type is weekly.
+	 *
+	 * @return DayOfWeek The firstDayOfWeek
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getFirstDayOfWeek()
     {
         if (array_key_exists("firstDayOfWeek", $this->_propDict)) {
@@ -209,12 +211,13 @@ class RecurrencePattern extends Entity
          return $this;
     }
 
-    /**
-    * Gets the index
-    * Specifies on which instance of the allowed days specified in daysOfsWeek the event occurs, counted from the first instance in the month. Possible values are: first, second, third, fourth, last. Default is first. Optional and used if type is relativeMonthly or relativeYearly.
-    *
-    * @return WeekIndex The index
-    */
+	/**
+	 * Gets the index
+	 * Specifies on which instance of the allowed days specified in daysOfsWeek the event occurs, counted from the first instance in the month. Possible values are: first, second, third, fourth, last. Default is first. Optional and used if type is relativeMonthly or relativeYearly.
+	 *
+	 * @return WeekIndex The index
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getIndex()
     {
         if (array_key_exists("index", $this->_propDict)) {

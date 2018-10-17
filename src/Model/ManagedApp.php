@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * ManagedApp File
 * PHP version 7
 *
@@ -26,12 +26,13 @@ namespace Microsoft\Graph\Model;
 */
 class ManagedApp extends MobileApp
 {
-    /**
-    * Gets the appAvailability
-    * The Application's availability. Possible values are: global, lineOfBusiness.
-    *
-    * @return ManagedAppAvailability The appAvailability
-    */
+	/**
+	 * Gets the appAvailability
+	 * The Application's availability. Possible values are: global, lineOfBusiness.
+	 *
+	 * @return ManagedAppAvailability The appAvailability
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getAppAvailability()
     {
         if (array_key_exists("appAvailability", $this->_propDict)) {
@@ -44,7 +45,7 @@ class ManagedApp extends MobileApp
         }
         return null;
     }
-    
+
     /**
     * Sets the appAvailability
     * The Application's availability. Possible values are: global, lineOfBusiness.
@@ -58,7 +59,7 @@ class ManagedApp extends MobileApp
         $this->_propDict["appAvailability"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the version
     * The Application's version.
@@ -73,7 +74,7 @@ class ManagedApp extends MobileApp
             return null;
         }
     }
-    
+
     /**
     * Sets the version
     * The Application's version.
@@ -87,5 +88,5 @@ class ManagedApp extends MobileApp
         $this->_propDict["version"] = $val;
         return $this;
     }
-    
+
 }

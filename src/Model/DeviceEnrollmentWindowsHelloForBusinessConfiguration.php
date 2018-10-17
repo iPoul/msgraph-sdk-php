@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * DeviceEnrollmentWindowsHelloForBusinessConfiguration File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
             return null;
         }
     }
-    
+
     /**
     * Sets the pinMinimumLength
     * Not yet documented
@@ -54,7 +54,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         $this->_propDict["pinMinimumLength"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the pinMaximumLength
     * Not yet documented
@@ -69,7 +69,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
             return null;
         }
     }
-    
+
     /**
     * Sets the pinMaximumLength
     * Not yet documented
@@ -83,13 +83,14 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         $this->_propDict["pinMaximumLength"] = intval($val);
         return $this;
     }
-    
-    /**
-    * Gets the pinUppercaseCharactersUsage
-    * Not yet documented. Possible values are: allowed, required, disallowed.
-    *
-    * @return WindowsHelloForBusinessPinUsage The pinUppercaseCharactersUsage
-    */
+
+	/**
+	 * Gets the pinUppercaseCharactersUsage
+	 * Not yet documented. Possible values are: allowed, required, disallowed.
+	 *
+	 * @return WindowsHelloForBusinessPinUsage The pinUppercaseCharactersUsage
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getPinUppercaseCharactersUsage()
     {
         if (array_key_exists("pinUppercaseCharactersUsage", $this->_propDict)) {
@@ -102,7 +103,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         }
         return null;
     }
-    
+
     /**
     * Sets the pinUppercaseCharactersUsage
     * Not yet documented. Possible values are: allowed, required, disallowed.
@@ -116,13 +117,14 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         $this->_propDict["pinUppercaseCharactersUsage"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the pinLowercaseCharactersUsage
-    * Not yet documented. Possible values are: allowed, required, disallowed.
-    *
-    * @return WindowsHelloForBusinessPinUsage The pinLowercaseCharactersUsage
-    */
+
+	/**
+	 * Gets the pinLowercaseCharactersUsage
+	 * Not yet documented. Possible values are: allowed, required, disallowed.
+	 *
+	 * @return WindowsHelloForBusinessPinUsage The pinLowercaseCharactersUsage
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getPinLowercaseCharactersUsage()
     {
         if (array_key_exists("pinLowercaseCharactersUsage", $this->_propDict)) {
@@ -135,7 +137,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         }
         return null;
     }
-    
+
     /**
     * Sets the pinLowercaseCharactersUsage
     * Not yet documented. Possible values are: allowed, required, disallowed.
@@ -149,13 +151,14 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         $this->_propDict["pinLowercaseCharactersUsage"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the pinSpecialCharactersUsage
-    * Not yet documented. Possible values are: allowed, required, disallowed.
-    *
-    * @return WindowsHelloForBusinessPinUsage The pinSpecialCharactersUsage
-    */
+
+	/**
+	 * Gets the pinSpecialCharactersUsage
+	 * Not yet documented. Possible values are: allowed, required, disallowed.
+	 *
+	 * @return WindowsHelloForBusinessPinUsage The pinSpecialCharactersUsage
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getPinSpecialCharactersUsage()
     {
         if (array_key_exists("pinSpecialCharactersUsage", $this->_propDict)) {
@@ -168,7 +171,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         }
         return null;
     }
-    
+
     /**
     * Sets the pinSpecialCharactersUsage
     * Not yet documented. Possible values are: allowed, required, disallowed.
@@ -182,13 +185,14 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         $this->_propDict["pinSpecialCharactersUsage"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the state
-    * Not yet documented. Possible values are: notConfigured, enabled, disabled.
-    *
-    * @return Enablement The state
-    */
+
+	/**
+	 * Gets the state
+	 * Not yet documented. Possible values are: notConfigured, enabled, disabled.
+	 *
+	 * @return Enablement The state
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getState()
     {
         if (array_key_exists("state", $this->_propDict)) {
@@ -201,7 +205,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         }
         return null;
     }
-    
+
     /**
     * Sets the state
     * Not yet documented. Possible values are: notConfigured, enabled, disabled.
@@ -215,7 +219,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         $this->_propDict["state"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the securityDeviceRequired
     * Not yet documented
@@ -230,7 +234,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
             return null;
         }
     }
-    
+
     /**
     * Sets the securityDeviceRequired
     * Not yet documented
@@ -244,7 +248,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         $this->_propDict["securityDeviceRequired"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the unlockWithBiometricsEnabled
     * Not yet documented
@@ -259,7 +263,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
             return null;
         }
     }
-    
+
     /**
     * Sets the unlockWithBiometricsEnabled
     * Not yet documented
@@ -273,7 +277,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         $this->_propDict["unlockWithBiometricsEnabled"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the remotePassportEnabled
     * Not yet documented
@@ -288,7 +292,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
             return null;
         }
     }
-    
+
     /**
     * Sets the remotePassportEnabled
     * Not yet documented
@@ -302,7 +306,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         $this->_propDict["remotePassportEnabled"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the pinPreviousBlockCount
     * Not yet documented
@@ -317,7 +321,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
             return null;
         }
     }
-    
+
     /**
     * Sets the pinPreviousBlockCount
     * Not yet documented
@@ -331,7 +335,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         $this->_propDict["pinPreviousBlockCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the pinExpirationInDays
     * Not yet documented
@@ -346,7 +350,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
             return null;
         }
     }
-    
+
     /**
     * Sets the pinExpirationInDays
     * Not yet documented
@@ -360,13 +364,14 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         $this->_propDict["pinExpirationInDays"] = intval($val);
         return $this;
     }
-    
-    /**
-    * Gets the enhancedBiometricsState
-    * Not yet documented. Possible values are: notConfigured, enabled, disabled.
-    *
-    * @return Enablement The enhancedBiometricsState
-    */
+
+	/**
+	 * Gets the enhancedBiometricsState
+	 * Not yet documented. Possible values are: notConfigured, enabled, disabled.
+	 *
+	 * @return Enablement The enhancedBiometricsState
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getEnhancedBiometricsState()
     {
         if (array_key_exists("enhancedBiometricsState", $this->_propDict)) {
@@ -379,7 +384,7 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         }
         return null;
     }
-    
+
     /**
     * Sets the enhancedBiometricsState
     * Not yet documented. Possible values are: notConfigured, enabled, disabled.
@@ -393,5 +398,5 @@ class DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollm
         $this->_propDict["enhancedBiometricsState"] = $val;
         return $this;
     }
-    
+
 }

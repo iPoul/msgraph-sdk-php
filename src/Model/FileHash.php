@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * FileHash File
 * PHP version 7
 *
@@ -25,12 +25,12 @@ namespace Microsoft\Graph\Model;
 */
 class FileHash extends Entity
 {
-
-    /**
-    * Gets the hashType
-    *
-    * @return FileHashType The hashType
-    */
+	/**
+	 * Gets the hashType
+	 *
+	 * @return FileHashType The hashType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getHashType()
     {
         if (array_key_exists("hashType", $this->_propDict)) {

@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * RegistryKeyState File
 * PHP version 7
 *
@@ -25,12 +25,12 @@ namespace Microsoft\Graph\Model;
 */
 class RegistryKeyState extends Entity
 {
-
-    /**
-    * Gets the hive
-    *
-    * @return RegistryHive The hive
-    */
+	/**
+	 * Gets the hive
+	 *
+	 * @return RegistryHive The hive
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getHive()
     {
         if (array_key_exists("hive", $this->_propDict)) {
@@ -161,11 +161,12 @@ class RegistryKeyState extends Entity
         return $this;
     }
 
-    /**
-    * Gets the operation
-    *
-    * @return RegistryOperation The operation
-    */
+	/**
+	 * Gets the operation
+	 *
+	 * @return RegistryOperation The operation
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getOperation()
     {
         if (array_key_exists("operation", $this->_propDict)) {
@@ -270,11 +271,12 @@ class RegistryKeyState extends Entity
         return $this;
     }
 
-    /**
-    * Gets the valueType
-    *
-    * @return RegistryValueType The valueType
-    */
+	/**
+	 * Gets the valueType
+	 *
+	 * @return RegistryValueType The valueType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getValueType()
     {
         if (array_key_exists("valueType", $this->_propDict)) {

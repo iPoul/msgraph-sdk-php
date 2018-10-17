@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * Process File
 * PHP version 7
 *
@@ -140,11 +140,12 @@ class Process extends Entity
          return $this;
     }
 
-    /**
-    * Gets the integrityLevel
-    *
-    * @return ProcessIntegrityLevel The integrityLevel
-    */
+	/**
+	 * Gets the integrityLevel
+	 *
+	 * @return ProcessIntegrityLevel The integrityLevel
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getIntegrityLevel()
     {
         if (array_key_exists("integrityLevel", $this->_propDict)) {

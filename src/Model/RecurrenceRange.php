@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * RecurrenceRange File
 * PHP version 7
 *
@@ -25,13 +25,13 @@ namespace Microsoft\Graph\Model;
 */
 class RecurrenceRange extends Entity
 {
-
-    /**
-    * Gets the type
-    * The recurrence range. Possible values are: endDate, noEnd, numbered. Required.
-    *
-    * @return RecurrenceRangeType The type
-    */
+	/**
+	 * Gets the type
+	 * The recurrence range. Possible values are: endDate, noEnd, numbered. Required.
+	 *
+	 * @return RecurrenceRangeType The type
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getType()
     {
         if (array_key_exists("type", $this->_propDict)) {

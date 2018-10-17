@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * MailTips File
 * PHP version 7
 *
@@ -244,11 +244,12 @@ class MailTips extends Entity
         return $this;
     }
 
-    /**
-    * Gets the recipientScope
-    *
-    * @return RecipientScopeType The recipientScope
-    */
+	/**
+	 * Gets the recipientScope
+	 *
+	 * @return RecipientScopeType The recipientScope
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getRecipientScope()
     {
         if (array_key_exists("recipientScope", $this->_propDict)) {

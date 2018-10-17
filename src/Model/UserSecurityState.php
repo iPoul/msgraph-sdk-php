@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * UserSecurityState File
 * PHP version 7
 *
@@ -104,11 +104,12 @@ class UserSecurityState extends Entity
         return $this;
     }
 
-    /**
-    * Gets the emailRole
-    *
-    * @return EmailRole The emailRole
-    */
+	/**
+	 * Gets the emailRole
+	 *
+	 * @return EmailRole The emailRole
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getEmailRole()
     {
         if (array_key_exists("emailRole", $this->_propDict)) {
@@ -270,11 +271,12 @@ class UserSecurityState extends Entity
         return $this;
     }
 
-    /**
-    * Gets the logonType
-    *
-    * @return LogonType The logonType
-    */
+	/**
+	 * Gets the logonType
+	 *
+	 * @return LogonType The logonType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getLogonType()
     {
         if (array_key_exists("logonType", $this->_propDict)) {
@@ -353,11 +355,12 @@ class UserSecurityState extends Entity
         return $this;
     }
 
-    /**
-    * Gets the userAccountType
-    *
-    * @return UserAccountSecurityType The userAccountType
-    */
+	/**
+	 * Gets the userAccountType
+	 *
+	 * @return UserAccountSecurityType The userAccountType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getUserAccountType()
     {
         if (array_key_exists("userAccountType", $this->_propDict)) {

@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * MediaContentRatingJapan File
 * PHP version 7
 *
@@ -25,13 +25,13 @@ namespace Microsoft\Graph\Model;
 */
 class MediaContentRatingJapan extends Entity
 {
-
-    /**
-    * Gets the movieRating
-    * Movies rating selected for Japan. Possible values are: allAllowed, allBlocked, general, parentalGuidance, agesAbove15, agesAbove18.
-    *
-    * @return RatingJapanMoviesType The movieRating
-    */
+	/**
+	 * Gets the movieRating
+	 * Movies rating selected for Japan. Possible values are: allAllowed, allBlocked, general, parentalGuidance, agesAbove15, agesAbove18.
+	 *
+	 * @return RatingJapanMoviesType The movieRating
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getMovieRating()
     {
         if (array_key_exists("movieRating", $this->_propDict)) {
@@ -59,12 +59,13 @@ class MediaContentRatingJapan extends Entity
          return $this;
     }
 
-    /**
-    * Gets the tvRating
-    * TV rating selected for Japan. Possible values are: allAllowed, allBlocked, explicitAllowed.
-    *
-    * @return RatingJapanTelevisionType The tvRating
-    */
+	/**
+	 * Gets the tvRating
+	 * TV rating selected for Japan. Possible values are: allAllowed, allBlocked, explicitAllowed.
+	 *
+	 * @return RatingJapanTelevisionType The tvRating
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getTvRating()
     {
         if (array_key_exists("tvRating", $this->_propDict)) {

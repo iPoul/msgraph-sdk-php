@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * RemoteAssistancePartner File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class RemoteAssistancePartner extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the displayName
     * Display name of the partner.
@@ -54,7 +54,7 @@ class RemoteAssistancePartner extends Entity
         $this->_propDict["displayName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the onboardingUrl
     * URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
@@ -69,7 +69,7 @@ class RemoteAssistancePartner extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the onboardingUrl
     * URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
@@ -83,13 +83,14 @@ class RemoteAssistancePartner extends Entity
         $this->_propDict["onboardingUrl"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the onboardingStatus
-    * TBD. Possible values are: notOnboarded, onboarding, onboarded.
-    *
-    * @return RemoteAssistanceOnboardingStatus The onboardingStatus
-    */
+
+	/**
+	 * Gets the onboardingStatus
+	 * TBD. Possible values are: notOnboarded, onboarding, onboarded.
+	 *
+	 * @return RemoteAssistanceOnboardingStatus The onboardingStatus
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getOnboardingStatus()
     {
         if (array_key_exists("onboardingStatus", $this->_propDict)) {
@@ -102,7 +103,7 @@ class RemoteAssistancePartner extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the onboardingStatus
     * TBD. Possible values are: notOnboarded, onboarding, onboarded.
@@ -116,7 +117,7 @@ class RemoteAssistancePartner extends Entity
         $this->_propDict["onboardingStatus"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the lastConnectionDateTime
     * Timestamp of the last request sent to Intune by the TEM partner.
@@ -135,7 +136,7 @@ class RemoteAssistancePartner extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastConnectionDateTime
     * Timestamp of the last request sent to Intune by the TEM partner.
@@ -149,5 +150,5 @@ class RemoteAssistancePartner extends Entity
         $this->_propDict["lastConnectionDateTime"] = $val;
         return $this;
     }
-    
+
 }

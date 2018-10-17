@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * SharedPCAccountManagerPolicy File
 * PHP version 7
 *
@@ -25,13 +25,13 @@ namespace Microsoft\Graph\Model;
 */
 class SharedPCAccountManagerPolicy extends Entity
 {
-
-    /**
-    * Gets the accountDeletionPolicy
-    * Configures when accounts are deleted. Possible values are: immediate, diskSpaceThreshold, diskSpaceThresholdOrInactiveThreshold.
-    *
-    * @return SharedPCAccountDeletionPolicyType The accountDeletionPolicy
-    */
+	/**
+	 * Gets the accountDeletionPolicy
+	 * Configures when accounts are deleted. Possible values are: immediate, diskSpaceThreshold, diskSpaceThresholdOrInactiveThreshold.
+	 *
+	 * @return SharedPCAccountDeletionPolicyType The accountDeletionPolicy
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getAccountDeletionPolicy()
     {
         if (array_key_exists("accountDeletionPolicy", $this->_propDict)) {

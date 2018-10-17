@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * InferenceClassificationOverride File
 * PHP version 7
 *
@@ -26,12 +26,13 @@ namespace Microsoft\Graph\Model;
 */
 class InferenceClassificationOverride extends Entity
 {
-    /**
-    * Gets the classifyAs
-    * Specifies how incoming messages from a specific sender should always be classified as. Possible values are: focused, other.
-    *
-    * @return InferenceClassificationType The classifyAs
-    */
+	/**
+	 * Gets the classifyAs
+	 * Specifies how incoming messages from a specific sender should always be classified as. Possible values are: focused, other.
+	 *
+	 * @return InferenceClassificationType The classifyAs
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getClassifyAs()
     {
         if (array_key_exists("classifyAs", $this->_propDict)) {
@@ -44,7 +45,7 @@ class InferenceClassificationOverride extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the classifyAs
     * Specifies how incoming messages from a specific sender should always be classified as. Possible values are: focused, other.
@@ -58,7 +59,7 @@ class InferenceClassificationOverride extends Entity
         $this->_propDict["classifyAs"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the senderEmailAddress
     * The email address information of the sender for whom the override is created.
@@ -77,7 +78,7 @@ class InferenceClassificationOverride extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the senderEmailAddress
     * The email address information of the sender for whom the override is created.
@@ -91,5 +92,5 @@ class InferenceClassificationOverride extends Entity
         $this->_propDict["senderEmailAddress"] = $val;
         return $this;
     }
-    
+
 }

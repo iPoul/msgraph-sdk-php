@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * DeviceConfigurationSettingState File
 * PHP version 7
 *
@@ -110,12 +110,13 @@ class DeviceConfigurationSettingState extends Entity
         return $this;
     }
 
-    /**
-    * Gets the state
-    * The compliance state of the setting. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
-    *
-    * @return ComplianceStatus The state
-    */
+	/**
+	 * Gets the state
+	 * The compliance state of the setting. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
+	 *
+	 * @return ComplianceStatus The state
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getState()
     {
         if (array_key_exists("state", $this->_propDict)) {

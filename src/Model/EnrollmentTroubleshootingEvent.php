@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * EnrollmentTroubleshootingEvent File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
             return null;
         }
     }
-    
+
     /**
     * Sets the managedDeviceIdentifier
     * Device identifier created or collected by Intune.
@@ -54,7 +54,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
         $this->_propDict["managedDeviceIdentifier"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the operatingSystem
     * Operating System.
@@ -69,7 +69,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
             return null;
         }
     }
-    
+
     /**
     * Sets the operatingSystem
     * Operating System.
@@ -83,7 +83,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
         $this->_propDict["operatingSystem"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the osVersion
     * OS Version.
@@ -98,7 +98,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
             return null;
         }
     }
-    
+
     /**
     * Sets the osVersion
     * OS Version.
@@ -112,7 +112,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
         $this->_propDict["osVersion"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the userId
     * Identifier for the user that tried to enroll the device.
@@ -127,7 +127,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
             return null;
         }
     }
-    
+
     /**
     * Sets the userId
     * Identifier for the user that tried to enroll the device.
@@ -141,7 +141,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
         $this->_propDict["userId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the deviceId
     * Azure AD device identifier.
@@ -156,7 +156,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
             return null;
         }
     }
-    
+
     /**
     * Sets the deviceId
     * Azure AD device identifier.
@@ -170,13 +170,14 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
         $this->_propDict["deviceId"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the enrollmentType
-    * Type of the enrollment. Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
-    *
-    * @return DeviceEnrollmentType The enrollmentType
-    */
+
+	/**
+	 * Gets the enrollmentType
+	 * Type of the enrollment. Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
+	 *
+	 * @return DeviceEnrollmentType The enrollmentType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getEnrollmentType()
     {
         if (array_key_exists("enrollmentType", $this->_propDict)) {
@@ -189,7 +190,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
         }
         return null;
     }
-    
+
     /**
     * Sets the enrollmentType
     * Type of the enrollment. Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
@@ -203,13 +204,14 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
         $this->_propDict["enrollmentType"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the failureCategory
-    * Highlevel failure category. Possible values are: unknown, authentication, authorization, accountValidation, userValidation, deviceNotSupported, inMaintenance, badRequest, featureNotSupported, enrollmentRestrictionsEnforced, clientDisconnected.
-    *
-    * @return DeviceEnrollmentFailureReason The failureCategory
-    */
+
+	/**
+	 * Gets the failureCategory
+	 * Highlevel failure category. Possible values are: unknown, authentication, authorization, accountValidation, userValidation, deviceNotSupported, inMaintenance, badRequest, featureNotSupported, enrollmentRestrictionsEnforced, clientDisconnected.
+	 *
+	 * @return DeviceEnrollmentFailureReason The failureCategory
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getFailureCategory()
     {
         if (array_key_exists("failureCategory", $this->_propDict)) {
@@ -222,7 +224,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
         }
         return null;
     }
-    
+
     /**
     * Sets the failureCategory
     * Highlevel failure category. Possible values are: unknown, authentication, authorization, accountValidation, userValidation, deviceNotSupported, inMaintenance, badRequest, featureNotSupported, enrollmentRestrictionsEnforced, clientDisconnected.
@@ -236,7 +238,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
         $this->_propDict["failureCategory"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the failureReason
     * Detailed failure reason.
@@ -251,7 +253,7 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
             return null;
         }
     }
-    
+
     /**
     * Sets the failureReason
     * Detailed failure reason.
@@ -265,5 +267,5 @@ class EnrollmentTroubleshootingEvent extends DeviceManagementTroubleshootingEven
         $this->_propDict["failureReason"] = $val;
         return $this;
     }
-    
+
 }

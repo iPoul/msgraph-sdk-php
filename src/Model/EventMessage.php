@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * EventMessage File
 * PHP version 7
 *
@@ -26,12 +26,13 @@ namespace Microsoft\Graph\Model;
 */
 class EventMessage extends Message
 {
-    /**
-    * Gets the meetingMessageType
-    * The type of event message: none, meetingRequest, meetingCancelled, meetingAccepted, meetingTenativelyAccepted, meetingDeclined.
-    *
-    * @return MeetingMessageType The meetingMessageType
-    */
+	/**
+	 * Gets the meetingMessageType
+	 * The type of event message: none, meetingRequest, meetingCancelled, meetingAccepted, meetingTenativelyAccepted, meetingDeclined.
+	 *
+	 * @return MeetingMessageType The meetingMessageType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getMeetingMessageType()
     {
         if (array_key_exists("meetingMessageType", $this->_propDict)) {
@@ -44,7 +45,7 @@ class EventMessage extends Message
         }
         return null;
     }
-    
+
     /**
     * Sets the meetingMessageType
     * The type of event message: none, meetingRequest, meetingCancelled, meetingAccepted, meetingTenativelyAccepted, meetingDeclined.
@@ -58,7 +59,7 @@ class EventMessage extends Message
         $this->_propDict["meetingMessageType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the event
     * The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.
@@ -77,7 +78,7 @@ class EventMessage extends Message
         }
         return null;
     }
-    
+
     /**
     * Sets the event
     * The event associated with the event message. The assumption for attendees or room resources is that the Calendar Attendant is set to automatically update the calendar with an event when meeting request event messages arrive. Navigation property.  Read-only.
@@ -91,5 +92,5 @@ class EventMessage extends Message
         $this->_propDict["event"] = $val;
         return $this;
     }
-    
+
 }

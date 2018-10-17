@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * MessageRulePredicates File
 * PHP version 7
 *
@@ -222,12 +222,13 @@ class MessageRulePredicates extends Entity
         return $this;
     }
 
-    /**
-    * Gets the messageActionFlag
-    * Represents the flag-for-action value that appears on an incoming message in order for the condition or exception to apply. Possible values are: any, call, doNotForward, followUp, fyi, forward, noResponseNecessary, read, reply, replyToAll, review.
-    *
-    * @return MessageActionFlag The messageActionFlag
-    */
+	/**
+	 * Gets the messageActionFlag
+	 * Represents the flag-for-action value that appears on an incoming message in order for the condition or exception to apply. Possible values are: any, call, doNotForward, followUp, fyi, forward, noResponseNecessary, read, reply, replyToAll, review.
+	 *
+	 * @return MessageActionFlag The messageActionFlag
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getMessageActionFlag()
     {
         if (array_key_exists("messageActionFlag", $this->_propDict)) {
@@ -255,12 +256,13 @@ class MessageRulePredicates extends Entity
          return $this;
     }
 
-    /**
-    * Gets the importance
-    * The importance that is stamped on an incoming message in order for the condition or exception to apply: low, normal, high.
-    *
-    * @return Importance The importance
-    */
+	/**
+	 * Gets the importance
+	 * The importance that is stamped on an incoming message in order for the condition or exception to apply: low, normal, high.
+	 *
+	 * @return Importance The importance
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getImportance()
     {
         if (array_key_exists("importance", $this->_propDict)) {
@@ -288,12 +290,13 @@ class MessageRulePredicates extends Entity
          return $this;
     }
 
-    /**
-    * Gets the sensitivity
-    * Represents the sensitivity level that must be stamped on an incoming message in order for the condition or exception to apply. Possible values are: normal, personal, private, confidential.
-    *
-    * @return Sensitivity The sensitivity
-    */
+	/**
+	 * Gets the sensitivity
+	 * Represents the sensitivity level that must be stamped on an incoming message in order for the condition or exception to apply. Possible values are: normal, personal, private, confidential.
+	 *
+	 * @return Sensitivity The sensitivity
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getSensitivity()
     {
         if (array_key_exists("sensitivity", $this->_propDict)) {

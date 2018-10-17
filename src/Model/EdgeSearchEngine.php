@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * EdgeSearchEngine File
 * PHP version 7
 *
@@ -34,13 +34,13 @@ class EdgeSearchEngine extends EdgeSearchEngineBase
         $this->setODataType("#microsoft.graph.edgeSearchEngine");
     }
 
-
-    /**
-    * Gets the edgeSearchEngineType
-    * Allows IT admins to set a predefined default search engine for MDM-Controlled devices. Possible values are: default, bing.
-    *
-    * @return EdgeSearchEngineType The edgeSearchEngineType
-    */
+	/**
+	 * Gets the edgeSearchEngineType
+	 * Allows IT admins to set a predefined default search engine for MDM-Controlled devices. Possible values are: default, bing.
+	 *
+	 * @return EdgeSearchEngineType The edgeSearchEngineType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getEdgeSearchEngineType()
     {
         if (array_key_exists("edgeSearchEngineType", $this->_propDict)) {

@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * AndroidWorkProfileGeneralDeviceConfiguration File
 * PHP version 7
 *
@@ -39,7 +39,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordBlockFingerprintUnlock
     *
@@ -52,7 +52,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordBlockFingerprintUnlock"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordBlockTrustAgents
     *
@@ -66,7 +66,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordBlockTrustAgents
     *
@@ -79,7 +79,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordBlockTrustAgents"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordExpirationDays
     *
@@ -93,7 +93,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordExpirationDays
     *
@@ -106,7 +106,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordExpirationDays"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordMinimumLength
     *
@@ -120,7 +120,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordMinimumLength
     *
@@ -133,7 +133,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordMinimumLength"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordMinutesOfInactivityBeforeScreenTimeout
     *
@@ -147,7 +147,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordMinutesOfInactivityBeforeScreenTimeout
     *
@@ -160,7 +160,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordMinutesOfInactivityBeforeScreenTimeout"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordPreviousPasswordBlockCount
     *
@@ -174,7 +174,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordPreviousPasswordBlockCount
     *
@@ -187,7 +187,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordPreviousPasswordBlockCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordSignInFailureCountBeforeFactoryReset
     *
@@ -201,7 +201,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordSignInFailureCountBeforeFactoryReset
     *
@@ -214,12 +214,13 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordSignInFailureCountBeforeFactoryReset"] = intval($val);
         return $this;
     }
-    
-    /**
-    * Gets the passwordRequiredType
-    *
-    * @return AndroidWorkProfileRequiredPasswordType The passwordRequiredType
-    */
+
+	/**
+	 * Gets the passwordRequiredType
+	 *
+	 * @return AndroidWorkProfileRequiredPasswordType The passwordRequiredType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getPasswordRequiredType()
     {
         if (array_key_exists("passwordRequiredType", $this->_propDict)) {
@@ -232,7 +233,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the passwordRequiredType
     *
@@ -245,12 +246,13 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordRequiredType"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the workProfileDataSharingType
-    *
-    * @return AndroidWorkProfileCrossProfileDataSharingType The workProfileDataSharingType
-    */
+
+	/**
+	 * Gets the workProfileDataSharingType
+	 *
+	 * @return AndroidWorkProfileCrossProfileDataSharingType The workProfileDataSharingType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getWorkProfileDataSharingType()
     {
         if (array_key_exists("workProfileDataSharingType", $this->_propDict)) {
@@ -263,7 +265,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the workProfileDataSharingType
     *
@@ -276,7 +278,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfileDataSharingType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the workProfileBlockNotificationsWhileDeviceLocked
     *
@@ -290,7 +292,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfileBlockNotificationsWhileDeviceLocked
     *
@@ -303,7 +305,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfileBlockNotificationsWhileDeviceLocked"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfileBlockAddingAccounts
     *
@@ -317,7 +319,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfileBlockAddingAccounts
     *
@@ -330,7 +332,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfileBlockAddingAccounts"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfileBluetoothEnableContactSharing
     *
@@ -344,7 +346,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfileBluetoothEnableContactSharing
     *
@@ -357,7 +359,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfileBluetoothEnableContactSharing"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfileBlockScreenCapture
     *
@@ -371,7 +373,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfileBlockScreenCapture
     *
@@ -384,7 +386,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfileBlockScreenCapture"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfileBlockCrossProfileCallerId
     *
@@ -398,7 +400,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfileBlockCrossProfileCallerId
     *
@@ -411,7 +413,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfileBlockCrossProfileCallerId"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfileBlockCamera
     *
@@ -425,7 +427,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfileBlockCamera
     *
@@ -438,7 +440,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfileBlockCamera"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfileBlockCrossProfileContactsSearch
     *
@@ -452,7 +454,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfileBlockCrossProfileContactsSearch
     *
@@ -465,7 +467,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfileBlockCrossProfileContactsSearch"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfileBlockCrossProfileCopyPaste
     *
@@ -479,7 +481,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfileBlockCrossProfileCopyPaste
     *
@@ -492,12 +494,13 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfileBlockCrossProfileCopyPaste"] = boolval($val);
         return $this;
     }
-    
-    /**
-    * Gets the workProfileDefaultAppPermissionPolicy
-    *
-    * @return AndroidWorkProfileDefaultAppPermissionPolicyType The workProfileDefaultAppPermissionPolicy
-    */
+
+	/**
+	 * Gets the workProfileDefaultAppPermissionPolicy
+	 *
+	 * @return AndroidWorkProfileDefaultAppPermissionPolicyType The workProfileDefaultAppPermissionPolicy
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getWorkProfileDefaultAppPermissionPolicy()
     {
         if (array_key_exists("workProfileDefaultAppPermissionPolicy", $this->_propDict)) {
@@ -510,7 +513,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the workProfileDefaultAppPermissionPolicy
     *
@@ -523,7 +526,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfileDefaultAppPermissionPolicy"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the workProfilePasswordBlockFingerprintUnlock
     *
@@ -537,7 +540,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfilePasswordBlockFingerprintUnlock
     *
@@ -550,7 +553,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordBlockFingerprintUnlock"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfilePasswordBlockTrustAgents
     *
@@ -564,7 +567,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfilePasswordBlockTrustAgents
     *
@@ -577,7 +580,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordBlockTrustAgents"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfilePasswordExpirationDays
     *
@@ -591,7 +594,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfilePasswordExpirationDays
     *
@@ -604,7 +607,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordExpirationDays"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfilePasswordMinimumLength
     *
@@ -618,7 +621,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfilePasswordMinimumLength
     *
@@ -631,7 +634,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordMinimumLength"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfilePasswordMinNumericCharacters
     *
@@ -645,7 +648,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfilePasswordMinNumericCharacters
     *
@@ -658,7 +661,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordMinNumericCharacters"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfilePasswordMinNonLetterCharacters
     *
@@ -672,7 +675,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfilePasswordMinNonLetterCharacters
     *
@@ -685,7 +688,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordMinNonLetterCharacters"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfilePasswordMinLetterCharacters
     *
@@ -699,7 +702,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfilePasswordMinLetterCharacters
     *
@@ -712,7 +715,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordMinLetterCharacters"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfilePasswordMinLowerCaseCharacters
     *
@@ -726,7 +729,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfilePasswordMinLowerCaseCharacters
     *
@@ -739,7 +742,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordMinLowerCaseCharacters"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfilePasswordMinUpperCaseCharacters
     *
@@ -753,7 +756,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfilePasswordMinUpperCaseCharacters
     *
@@ -766,7 +769,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordMinUpperCaseCharacters"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfilePasswordMinSymbolCharacters
     *
@@ -780,7 +783,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfilePasswordMinSymbolCharacters
     *
@@ -793,7 +796,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordMinSymbolCharacters"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfilePasswordMinutesOfInactivityBeforeScreenTimeout
     *
@@ -807,7 +810,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfilePasswordMinutesOfInactivityBeforeScreenTimeout
     *
@@ -820,7 +823,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordMinutesOfInactivityBeforeScreenTimeout"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfilePasswordPreviousPasswordBlockCount
     *
@@ -834,7 +837,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfilePasswordPreviousPasswordBlockCount
     *
@@ -847,7 +850,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordPreviousPasswordBlockCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the workProfilePasswordSignInFailureCountBeforeFactoryReset
     *
@@ -861,7 +864,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfilePasswordSignInFailureCountBeforeFactoryReset
     *
@@ -874,12 +877,13 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordSignInFailureCountBeforeFactoryReset"] = intval($val);
         return $this;
     }
-    
-    /**
-    * Gets the workProfilePasswordRequiredType
-    *
-    * @return AndroidWorkProfileRequiredPasswordType The workProfilePasswordRequiredType
-    */
+
+	/**
+	 * Gets the workProfilePasswordRequiredType
+	 *
+	 * @return AndroidWorkProfileRequiredPasswordType The workProfilePasswordRequiredType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getWorkProfilePasswordRequiredType()
     {
         if (array_key_exists("workProfilePasswordRequiredType", $this->_propDict)) {
@@ -892,7 +896,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the workProfilePasswordRequiredType
     *
@@ -905,7 +909,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfilePasswordRequiredType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the workProfileRequirePassword
     *
@@ -919,7 +923,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the workProfileRequirePassword
     *
@@ -932,7 +936,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["workProfileRequirePassword"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the securityRequireVerifyApps
     *
@@ -946,7 +950,7 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the securityRequireVerifyApps
     *
@@ -959,5 +963,5 @@ class AndroidWorkProfileGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["securityRequireVerifyApps"] = boolval($val);
         return $this;
     }
-    
+
 }

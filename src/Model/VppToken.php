@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * VppToken File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class VppToken extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the organizationName
     * The organization associated with the Apple Volume Purchase Program Token
@@ -54,13 +54,14 @@ class VppToken extends Entity
         $this->_propDict["organizationName"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the vppTokenAccountType
-    * The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: business, education. Possible values are: business, education.
-    *
-    * @return VppTokenAccountType The vppTokenAccountType
-    */
+
+	/**
+	 * Gets the vppTokenAccountType
+	 * The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: business, education. Possible values are: business, education.
+	 *
+	 * @return VppTokenAccountType The vppTokenAccountType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getVppTokenAccountType()
     {
         if (array_key_exists("vppTokenAccountType", $this->_propDict)) {
@@ -73,7 +74,7 @@ class VppToken extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the vppTokenAccountType
     * The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: business, education. Possible values are: business, education.
@@ -87,7 +88,7 @@ class VppToken extends Entity
         $this->_propDict["vppTokenAccountType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the appleId
     * The apple Id associated with the given Apple Volume Purchase Program Token.
@@ -102,7 +103,7 @@ class VppToken extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the appleId
     * The apple Id associated with the given Apple Volume Purchase Program Token.
@@ -116,7 +117,7 @@ class VppToken extends Entity
         $this->_propDict["appleId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the expirationDateTime
     * The expiration date time of the Apple Volume Purchase Program Token.
@@ -135,7 +136,7 @@ class VppToken extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the expirationDateTime
     * The expiration date time of the Apple Volume Purchase Program Token.
@@ -149,7 +150,7 @@ class VppToken extends Entity
         $this->_propDict["expirationDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the lastSyncDateTime
     * The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
@@ -168,7 +169,7 @@ class VppToken extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastSyncDateTime
     * The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
@@ -182,7 +183,7 @@ class VppToken extends Entity
         $this->_propDict["lastSyncDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the token
     * The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.
@@ -197,7 +198,7 @@ class VppToken extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the token
     * The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.
@@ -211,7 +212,7 @@ class VppToken extends Entity
         $this->_propDict["token"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the lastModifiedDateTime
     * Last modification date time associated with the Apple Volume Purchase Program Token.
@@ -230,7 +231,7 @@ class VppToken extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastModifiedDateTime
     * Last modification date time associated with the Apple Volume Purchase Program Token.
@@ -244,13 +245,14 @@ class VppToken extends Entity
         $this->_propDict["lastModifiedDateTime"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the state
-    * Current state of the Apple Volume Purchase Program Token. Possible values are: unknown, valid, expired, invalid. Possible values are: unknown, valid, expired, invalid.
-    *
-    * @return VppTokenState The state
-    */
+
+	/**
+	 * Gets the state
+	 * Current state of the Apple Volume Purchase Program Token. Possible values are: unknown, valid, expired, invalid. Possible values are: unknown, valid, expired, invalid.
+	 *
+	 * @return VppTokenState The state
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getState()
     {
         if (array_key_exists("state", $this->_propDict)) {
@@ -263,7 +265,7 @@ class VppToken extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the state
     * Current state of the Apple Volume Purchase Program Token. Possible values are: unknown, valid, expired, invalid. Possible values are: unknown, valid, expired, invalid.
@@ -277,13 +279,14 @@ class VppToken extends Entity
         $this->_propDict["state"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the lastSyncStatus
-    * Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: none, inProgress, completed, failed. Possible values are: none, inProgress, completed, failed.
-    *
-    * @return VppTokenSyncStatus The lastSyncStatus
-    */
+
+	/**
+	 * Gets the lastSyncStatus
+	 * Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: none, inProgress, completed, failed. Possible values are: none, inProgress, completed, failed.
+	 *
+	 * @return VppTokenSyncStatus The lastSyncStatus
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getLastSyncStatus()
     {
         if (array_key_exists("lastSyncStatus", $this->_propDict)) {
@@ -296,7 +299,7 @@ class VppToken extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastSyncStatus
     * Current sync status of the last application sync which was triggered using the Apple Volume Purchase Program Token. Possible values are: none, inProgress, completed, failed. Possible values are: none, inProgress, completed, failed.
@@ -310,7 +313,7 @@ class VppToken extends Entity
         $this->_propDict["lastSyncStatus"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the automaticallyUpdateApps
     * Whether or not apps for the VPP token will be automatically updated.
@@ -325,7 +328,7 @@ class VppToken extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the automaticallyUpdateApps
     * Whether or not apps for the VPP token will be automatically updated.
@@ -339,7 +342,7 @@ class VppToken extends Entity
         $this->_propDict["automaticallyUpdateApps"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the countryOrRegion
     * Whether or not apps for the VPP token will be automatically updated.
@@ -354,7 +357,7 @@ class VppToken extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the countryOrRegion
     * Whether or not apps for the VPP token will be automatically updated.
@@ -368,5 +371,5 @@ class VppToken extends Entity
         $this->_propDict["countryOrRegion"] = $val;
         return $this;
     }
-    
+
 }

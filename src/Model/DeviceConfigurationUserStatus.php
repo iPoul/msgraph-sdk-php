@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * DeviceConfigurationUserStatus File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class DeviceConfigurationUserStatus extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the userDisplayName
     * User name of the DevicePolicyStatus.
@@ -54,7 +54,7 @@ class DeviceConfigurationUserStatus extends Entity
         $this->_propDict["userDisplayName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the devicesCount
     * Devices count for that user.
@@ -69,7 +69,7 @@ class DeviceConfigurationUserStatus extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the devicesCount
     * Devices count for that user.
@@ -83,13 +83,14 @@ class DeviceConfigurationUserStatus extends Entity
         $this->_propDict["devicesCount"] = intval($val);
         return $this;
     }
-    
-    /**
-    * Gets the status
-    * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
-    *
-    * @return ComplianceStatus The status
-    */
+
+	/**
+	 * Gets the status
+	 * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
+	 *
+	 * @return ComplianceStatus The status
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getStatus()
     {
         if (array_key_exists("status", $this->_propDict)) {
@@ -102,7 +103,7 @@ class DeviceConfigurationUserStatus extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the status
     * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
@@ -116,7 +117,7 @@ class DeviceConfigurationUserStatus extends Entity
         $this->_propDict["status"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the lastReportedDateTime
     * Last modified date time of the policy report.
@@ -135,7 +136,7 @@ class DeviceConfigurationUserStatus extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastReportedDateTime
     * Last modified date time of the policy report.
@@ -149,7 +150,7 @@ class DeviceConfigurationUserStatus extends Entity
         $this->_propDict["lastReportedDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the userPrincipalName
     * UserPrincipalName.
@@ -164,7 +165,7 @@ class DeviceConfigurationUserStatus extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the userPrincipalName
     * UserPrincipalName.
@@ -178,5 +179,5 @@ class DeviceConfigurationUserStatus extends Entity
         $this->_propDict["userPrincipalName"] = $val;
         return $this;
     }
-    
+
 }

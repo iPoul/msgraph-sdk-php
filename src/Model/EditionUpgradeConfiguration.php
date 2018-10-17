@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * EditionUpgradeConfiguration File
 * PHP version 7
 *
@@ -26,12 +26,13 @@ namespace Microsoft\Graph\Model;
 */
 class EditionUpgradeConfiguration extends DeviceConfiguration
 {
-    /**
-    * Gets the licenseType
-    * Edition Upgrade License Type. Possible values are: productKey, licenseFile.
-    *
-    * @return EditionUpgradeLicenseType The licenseType
-    */
+	/**
+	 * Gets the licenseType
+	 * Edition Upgrade License Type. Possible values are: productKey, licenseFile.
+	 *
+	 * @return EditionUpgradeLicenseType The licenseType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getLicenseType()
     {
         if (array_key_exists("licenseType", $this->_propDict)) {
@@ -44,7 +45,7 @@ class EditionUpgradeConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the licenseType
     * Edition Upgrade License Type. Possible values are: productKey, licenseFile.
@@ -58,13 +59,14 @@ class EditionUpgradeConfiguration extends DeviceConfiguration
         $this->_propDict["licenseType"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the targetEdition
-    * Edition Upgrade Target Edition. Possible values are: windows10Enterprise, windows10EnterpriseN, windows10Education, windows10EducationN, windows10MobileEnterprise, windows10HolographicEnterprise, windows10Professional, windows10ProfessionalN, windows10ProfessionalEducation, windows10ProfessionalEducationN, windows10ProfessionalWorkstation, windows10ProfessionalWorkstationN.
-    *
-    * @return Windows10EditionType The targetEdition
-    */
+
+	/**
+	 * Gets the targetEdition
+	 * Edition Upgrade Target Edition. Possible values are: windows10Enterprise, windows10EnterpriseN, windows10Education, windows10EducationN, windows10MobileEnterprise, windows10HolographicEnterprise, windows10Professional, windows10ProfessionalN, windows10ProfessionalEducation, windows10ProfessionalEducationN, windows10ProfessionalWorkstation, windows10ProfessionalWorkstationN.
+	 *
+	 * @return Windows10EditionType The targetEdition
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getTargetEdition()
     {
         if (array_key_exists("targetEdition", $this->_propDict)) {
@@ -77,7 +79,7 @@ class EditionUpgradeConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the targetEdition
     * Edition Upgrade Target Edition. Possible values are: windows10Enterprise, windows10EnterpriseN, windows10Education, windows10EducationN, windows10MobileEnterprise, windows10HolographicEnterprise, windows10Professional, windows10ProfessionalN, windows10ProfessionalEducation, windows10ProfessionalEducationN, windows10ProfessionalWorkstation, windows10ProfessionalWorkstationN.
@@ -91,7 +93,7 @@ class EditionUpgradeConfiguration extends DeviceConfiguration
         $this->_propDict["targetEdition"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the license
     * Edition Upgrade License File Content.
@@ -106,7 +108,7 @@ class EditionUpgradeConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the license
     * Edition Upgrade License File Content.
@@ -120,7 +122,7 @@ class EditionUpgradeConfiguration extends DeviceConfiguration
         $this->_propDict["license"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the productKey
     * Edition Upgrade Product Key.
@@ -135,7 +137,7 @@ class EditionUpgradeConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the productKey
     * Edition Upgrade Product Key.
@@ -149,5 +151,5 @@ class EditionUpgradeConfiguration extends DeviceConfiguration
         $this->_propDict["productKey"] = $val;
         return $this;
     }
-    
+
 }

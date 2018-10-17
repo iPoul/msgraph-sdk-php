@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * MessageRuleActions File
 * PHP version 7
 *
@@ -166,12 +166,13 @@ class MessageRuleActions extends Entity
         return $this;
     }
 
-    /**
-    * Gets the markImportance
-    * Sets the importance of the message, which can be: low, normal, high.
-    *
-    * @return Importance The markImportance
-    */
+	/**
+	 * Gets the markImportance
+	 * Sets the importance of the message, which can be: low, normal, high.
+	 *
+	 * @return Importance The markImportance
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getMarkImportance()
     {
         if (array_key_exists("markImportance", $this->_propDict)) {

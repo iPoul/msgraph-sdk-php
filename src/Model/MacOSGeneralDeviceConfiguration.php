@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * MacOSGeneralDeviceConfiguration File
 * PHP version 7
 *
@@ -27,7 +27,7 @@ namespace Microsoft\Graph\Model;
 class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
 {
 
-     /** 
+     /**
      * Gets the compliantAppsList
     * List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.
      *
@@ -41,8 +41,8 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the compliantAppsList
     * List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.
     *
@@ -55,13 +55,14 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
 		$this->_propDict["compliantAppsList"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the compliantAppListType
-    * List that is in the CompliantAppsList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
-    *
-    * @return AppListType The compliantAppListType
-    */
+
+	/**
+	 * Gets the compliantAppListType
+	 * List that is in the CompliantAppsList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
+	 *
+	 * @return AppListType The compliantAppListType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getCompliantAppListType()
     {
         if (array_key_exists("compliantAppListType", $this->_propDict)) {
@@ -74,7 +75,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the compliantAppListType
     * List that is in the CompliantAppsList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
@@ -88,7 +89,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["compliantAppListType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the emailInDomainSuffixes
     * An email address lacking a suffix that matches any of these strings will be considered out-of-domain.
@@ -103,7 +104,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the emailInDomainSuffixes
     * An email address lacking a suffix that matches any of these strings will be considered out-of-domain.
@@ -117,7 +118,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["emailInDomainSuffixes"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the passwordBlockSimple
     * Block simple passwords.
@@ -132,7 +133,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordBlockSimple
     * Block simple passwords.
@@ -146,7 +147,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordBlockSimple"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordExpirationDays
     * Number of days before the password expires.
@@ -161,7 +162,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordExpirationDays
     * Number of days before the password expires.
@@ -175,7 +176,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordExpirationDays"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordMinimumCharacterSetCount
     * Number of character sets a password must contain. Valid values 0 to 4
@@ -190,7 +191,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordMinimumCharacterSetCount
     * Number of character sets a password must contain. Valid values 0 to 4
@@ -204,7 +205,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordMinimumCharacterSetCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordMinimumLength
     * Minimum length of passwords.
@@ -219,7 +220,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordMinimumLength
     * Minimum length of passwords.
@@ -233,7 +234,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordMinimumLength"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordMinutesOfInactivityBeforeLock
     * Minutes of inactivity required before a password is required.
@@ -248,7 +249,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordMinutesOfInactivityBeforeLock
     * Minutes of inactivity required before a password is required.
@@ -262,7 +263,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordMinutesOfInactivityBeforeLock"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordMinutesOfInactivityBeforeScreenTimeout
     * Minutes of inactivity required before the screen times out.
@@ -277,7 +278,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordMinutesOfInactivityBeforeScreenTimeout
     * Minutes of inactivity required before the screen times out.
@@ -291,7 +292,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordMinutesOfInactivityBeforeScreenTimeout"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the passwordPreviousPasswordBlockCount
     * Number of previous passwords to block.
@@ -306,7 +307,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordPreviousPasswordBlockCount
     * Number of previous passwords to block.
@@ -320,13 +321,14 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordPreviousPasswordBlockCount"] = intval($val);
         return $this;
     }
-    
-    /**
-    * Gets the passwordRequiredType
-    * Type of password that is required. Possible values are: deviceDefault, alphanumeric, numeric.
-    *
-    * @return RequiredPasswordType The passwordRequiredType
-    */
+
+	/**
+	 * Gets the passwordRequiredType
+	 * Type of password that is required. Possible values are: deviceDefault, alphanumeric, numeric.
+	 *
+	 * @return RequiredPasswordType The passwordRequiredType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getPasswordRequiredType()
     {
         if (array_key_exists("passwordRequiredType", $this->_propDict)) {
@@ -339,7 +341,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
         }
         return null;
     }
-    
+
     /**
     * Sets the passwordRequiredType
     * Type of password that is required. Possible values are: deviceDefault, alphanumeric, numeric.
@@ -353,7 +355,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordRequiredType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the passwordRequired
     * Whether or not to require a password.
@@ -368,7 +370,7 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
             return null;
         }
     }
-    
+
     /**
     * Sets the passwordRequired
     * Whether or not to require a password.
@@ -382,5 +384,5 @@ class MacOSGeneralDeviceConfiguration extends DeviceConfiguration
         $this->_propDict["passwordRequired"] = boolval($val);
         return $this;
     }
-    
+
 }

@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * FollowupFlag File
 * PHP version 7
 *
@@ -125,12 +125,13 @@ class FollowupFlag extends Entity
          return $this;
     }
 
-    /**
-    * Gets the flagStatus
-    * The status for follow-up for an item. Possible values are notFlagged, complete, and flagged.
-    *
-    * @return FollowupFlagStatus The flagStatus
-    */
+	/**
+	 * Gets the flagStatus
+	 * The status for follow-up for an item. Possible values are notFlagged, complete, and flagged.
+	 *
+	 * @return FollowupFlagStatus The flagStatus
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getFlagStatus()
     {
         if (array_key_exists("flagStatus", $this->_propDict)) {

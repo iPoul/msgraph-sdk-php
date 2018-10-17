@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * Website File
 * PHP version 7
 *
@@ -25,13 +25,13 @@ namespace Microsoft\Graph\Model;
 */
 class Website extends Entity
 {
-
-    /**
-    * Gets the type
-    * Possible values are: other, home, work, blog, profile.
-    *
-    * @return WebsiteType The type
-    */
+	/**
+	 * Gets the type
+	 * Possible values are: other, home, work, blog, profile.
+	 *
+	 * @return WebsiteType The type
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getType()
     {
         if (array_key_exists("type", $this->_propDict)) {

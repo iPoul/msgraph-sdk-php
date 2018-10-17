@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * NotificationMessageTemplate File
 * PHP version 7
 *
@@ -44,7 +44,7 @@ class NotificationMessageTemplate extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastModifiedDateTime
     * DateTime the object was last modified.
@@ -58,7 +58,7 @@ class NotificationMessageTemplate extends Entity
         $this->_propDict["lastModifiedDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the displayName
     * Display name for the Notification Message Template.
@@ -73,7 +73,7 @@ class NotificationMessageTemplate extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the displayName
     * Display name for the Notification Message Template.
@@ -87,7 +87,7 @@ class NotificationMessageTemplate extends Entity
         $this->_propDict["displayName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the defaultLocale
     * The default locale to fallback onto when the requested locale is not available.
@@ -102,7 +102,7 @@ class NotificationMessageTemplate extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the defaultLocale
     * The default locale to fallback onto when the requested locale is not available.
@@ -116,13 +116,14 @@ class NotificationMessageTemplate extends Entity
         $this->_propDict["defaultLocale"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the brandingOptions
-    * The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: none, includeCompanyLogo, includeCompanyName, includeContactInformation.
-    *
-    * @return NotificationTemplateBrandingOptions The brandingOptions
-    */
+
+	/**
+	 * Gets the brandingOptions
+	 * The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: none, includeCompanyLogo, includeCompanyName, includeContactInformation.
+	 *
+	 * @return NotificationTemplateBrandingOptions The brandingOptions
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getBrandingOptions()
     {
         if (array_key_exists("brandingOptions", $this->_propDict)) {
@@ -135,7 +136,7 @@ class NotificationMessageTemplate extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the brandingOptions
     * The Message Template Branding Options. Branding is defined in the Intune Admin Console. Possible values are: none, includeCompanyLogo, includeCompanyName, includeContactInformation.
@@ -149,9 +150,9 @@ class NotificationMessageTemplate extends Entity
         $this->_propDict["brandingOptions"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the localizedNotificationMessages
     * The list of localized messages for this Notification Message Template.
      *
@@ -165,8 +166,8 @@ class NotificationMessageTemplate extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the localizedNotificationMessages
     * The list of localized messages for this Notification Message Template.
     *
@@ -179,5 +180,5 @@ class NotificationMessageTemplate extends Entity
 		$this->_propDict["localizedNotificationMessages"] = $val;
         return $this;
     }
-    
+
 }

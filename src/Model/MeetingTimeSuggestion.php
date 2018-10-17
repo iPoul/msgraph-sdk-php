@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * MeetingTimeSuggestion File
 * PHP version 7
 *
@@ -87,12 +87,13 @@ class MeetingTimeSuggestion extends Entity
         return $this;
     }
 
-    /**
-    * Gets the organizerAvailability
-    * Availability of the meeting organizer for this meeting suggestion. Possible values are: free, tentative, busy, oof, workingElsewhere, unknown.
-    *
-    * @return FreeBusyStatus The organizerAvailability
-    */
+	/**
+	 * Gets the organizerAvailability
+	 * Availability of the meeting organizer for this meeting suggestion. Possible values are: free, tentative, busy, oof, workingElsewhere, unknown.
+	 *
+	 * @return FreeBusyStatus The organizerAvailability
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getOrganizerAvailability()
     {
         if (array_key_exists("organizerAvailability", $this->_propDict)) {

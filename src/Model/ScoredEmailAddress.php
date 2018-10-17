@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * ScoredEmailAddress File
 * PHP version 7
 *
@@ -82,11 +82,12 @@ class ScoredEmailAddress extends Entity
         return $this;
     }
 
-    /**
-    * Gets the selectionLikelihood
-    *
-    * @return SelectionLikelihoodInfo The selectionLikelihood
-    */
+	/**
+	 * Gets the selectionLikelihood
+	 *
+	 * @return SelectionLikelihoodInfo The selectionLikelihood
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getSelectionLikelihood()
     {
         if (array_key_exists("selectionLikelihood", $this->_propDict)) {

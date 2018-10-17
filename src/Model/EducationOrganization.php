@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * EducationOrganization File
 * PHP version 7
 *
@@ -39,7 +39,7 @@ class EducationOrganization extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the displayName
     *
@@ -52,7 +52,7 @@ class EducationOrganization extends Entity
         $this->_propDict["displayName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the description
     *
@@ -66,7 +66,7 @@ class EducationOrganization extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the description
     *
@@ -79,12 +79,13 @@ class EducationOrganization extends Entity
         $this->_propDict["description"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the externalSource
-    *
-    * @return EducationExternalSource The externalSource
-    */
+
+	/**
+	 * Gets the externalSource
+	 *
+	 * @return EducationExternalSource The externalSource
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getExternalSource()
     {
         if (array_key_exists("externalSource", $this->_propDict)) {
@@ -97,7 +98,7 @@ class EducationOrganization extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the externalSource
     *
@@ -110,5 +111,5 @@ class EducationOrganization extends Entity
         $this->_propDict["externalSource"] = $val;
         return $this;
     }
-    
+
 }

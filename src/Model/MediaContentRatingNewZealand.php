@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * MediaContentRatingNewZealand File
 * PHP version 7
 *
@@ -25,13 +25,13 @@ namespace Microsoft\Graph\Model;
 */
 class MediaContentRatingNewZealand extends Entity
 {
-
-    /**
-    * Gets the movieRating
-    * Movies rating selected for New Zealand. Possible values are: allAllowed, allBlocked, general, parentalGuidance, mature, agesAbove13, agesAbove15, agesAbove16, agesAbove18, restricted, agesAbove16Restricted.
-    *
-    * @return RatingNewZealandMoviesType The movieRating
-    */
+	/**
+	 * Gets the movieRating
+	 * Movies rating selected for New Zealand. Possible values are: allAllowed, allBlocked, general, parentalGuidance, mature, agesAbove13, agesAbove15, agesAbove16, agesAbove18, restricted, agesAbove16Restricted.
+	 *
+	 * @return RatingNewZealandMoviesType The movieRating
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getMovieRating()
     {
         if (array_key_exists("movieRating", $this->_propDict)) {
@@ -59,12 +59,13 @@ class MediaContentRatingNewZealand extends Entity
          return $this;
     }
 
-    /**
-    * Gets the tvRating
-    * TV rating selected for New Zealand. Possible values are: allAllowed, allBlocked, general, parentalGuidance, adults.
-    *
-    * @return RatingNewZealandTelevisionType The tvRating
-    */
+	/**
+	 * Gets the tvRating
+	 * TV rating selected for New Zealand. Possible values are: allAllowed, allBlocked, general, parentalGuidance, adults.
+	 *
+	 * @return RatingNewZealandTelevisionType The tvRating
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getTvRating()
     {
         if (array_key_exists("tvRating", $this->_propDict)) {

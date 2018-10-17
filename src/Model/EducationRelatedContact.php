@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * EducationRelatedContact File
 * PHP version 7
 *
@@ -130,11 +130,12 @@ class EducationRelatedContact extends Entity
         return $this;
     }
 
-    /**
-    * Gets the relationship
-    *
-    * @return EducationContactRelationship The relationship
-    */
+	/**
+	 * Gets the relationship
+	 *
+	 * @return EducationContactRelationship The relationship
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getRelationship()
     {
         if (array_key_exists("relationship", $this->_propDict)) {

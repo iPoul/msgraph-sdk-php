@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * ResponseStatus File
 * PHP version 7
 *
@@ -25,13 +25,13 @@ namespace Microsoft\Graph\Model;
 */
 class ResponseStatus extends Entity
 {
-
-    /**
-    * Gets the response
-    * The response type. Possible values are: None, Organizer, TentativelyAccepted, Accepted, Declined, NotResponded.
-    *
-    * @return ResponseType The response
-    */
+	/**
+	 * Gets the response
+	 * The response type. Possible values are: None, Organizer, TentativelyAccepted, Accepted, Declined, NotResponded.
+	 *
+	 * @return ResponseType The response
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getResponse()
     {
         if (array_key_exists("response", $this->_propDict)) {

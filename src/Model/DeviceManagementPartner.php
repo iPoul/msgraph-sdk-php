@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * DeviceManagementPartner File
 * PHP version 7
 *
@@ -44,7 +44,7 @@ class DeviceManagementPartner extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastHeartbeatDateTime
     * Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
@@ -58,13 +58,14 @@ class DeviceManagementPartner extends Entity
         $this->_propDict["lastHeartbeatDateTime"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the partnerState
-    * Partner state of this tenant. Possible values are: unknown, unavailable, enabled, terminated, rejected, unresponsive.
-    *
-    * @return DeviceManagementPartnerTenantState The partnerState
-    */
+
+	/**
+	 * Gets the partnerState
+	 * Partner state of this tenant. Possible values are: unknown, unavailable, enabled, terminated, rejected, unresponsive.
+	 *
+	 * @return DeviceManagementPartnerTenantState The partnerState
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getPartnerState()
     {
         if (array_key_exists("partnerState", $this->_propDict)) {
@@ -77,7 +78,7 @@ class DeviceManagementPartner extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the partnerState
     * Partner state of this tenant. Possible values are: unknown, unavailable, enabled, terminated, rejected, unresponsive.
@@ -91,13 +92,14 @@ class DeviceManagementPartner extends Entity
         $this->_propDict["partnerState"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the partnerAppType
-    * Partner App type. Possible values are: unknown, singleTenantApp, multiTenantApp.
-    *
-    * @return DeviceManagementPartnerAppType The partnerAppType
-    */
+
+	/**
+	 * Gets the partnerAppType
+	 * Partner App type. Possible values are: unknown, singleTenantApp, multiTenantApp.
+	 *
+	 * @return DeviceManagementPartnerAppType The partnerAppType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getPartnerAppType()
     {
         if (array_key_exists("partnerAppType", $this->_propDict)) {
@@ -110,7 +112,7 @@ class DeviceManagementPartner extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the partnerAppType
     * Partner App type. Possible values are: unknown, singleTenantApp, multiTenantApp.
@@ -124,7 +126,7 @@ class DeviceManagementPartner extends Entity
         $this->_propDict["partnerAppType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the singleTenantAppId
     * Partner Single tenant App id
@@ -139,7 +141,7 @@ class DeviceManagementPartner extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the singleTenantAppId
     * Partner Single tenant App id
@@ -153,7 +155,7 @@ class DeviceManagementPartner extends Entity
         $this->_propDict["singleTenantAppId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the displayName
     * Partner display name
@@ -168,7 +170,7 @@ class DeviceManagementPartner extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the displayName
     * Partner display name
@@ -182,7 +184,7 @@ class DeviceManagementPartner extends Entity
         $this->_propDict["displayName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the isConfigured
     * Whether device management partner is configured or not
@@ -197,7 +199,7 @@ class DeviceManagementPartner extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the isConfigured
     * Whether device management partner is configured or not
@@ -211,7 +213,7 @@ class DeviceManagementPartner extends Entity
         $this->_propDict["isConfigured"] = boolval($val);
         return $this;
     }
-    
+
     /**
     * Gets the whenPartnerDevicesWillBeRemovedDateTime
     * DateTime in UTC when PartnerDevices will be removed
@@ -230,7 +232,7 @@ class DeviceManagementPartner extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the whenPartnerDevicesWillBeRemovedDateTime
     * DateTime in UTC when PartnerDevices will be removed
@@ -244,7 +246,7 @@ class DeviceManagementPartner extends Entity
         $this->_propDict["whenPartnerDevicesWillBeRemovedDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime
     * DateTime in UTC when PartnerDevices will be marked as NonCompliant
@@ -263,7 +265,7 @@ class DeviceManagementPartner extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime
     * DateTime in UTC when PartnerDevices will be marked as NonCompliant
@@ -277,5 +279,5 @@ class DeviceManagementPartner extends Entity
         $this->_propDict["whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime"] = $val;
         return $this;
     }
-    
+
 }

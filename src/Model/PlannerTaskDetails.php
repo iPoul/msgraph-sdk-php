@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * PlannerTaskDetails File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class PlannerTaskDetails extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the description
     * Description of the task
@@ -54,13 +54,14 @@ class PlannerTaskDetails extends Entity
         $this->_propDict["description"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the previewType
-    * This sets the type of preview that shows up on the task. Possible values are: automatic, noPreview, checklist, description, reference. When set to automatic the displayed preview is chosen by the app viewing the task.
-    *
-    * @return PlannerPreviewType The previewType
-    */
+
+	/**
+	 * Gets the previewType
+	 * This sets the type of preview that shows up on the task. Possible values are: automatic, noPreview, checklist, description, reference. When set to automatic the displayed preview is chosen by the app viewing the task.
+	 *
+	 * @return PlannerPreviewType The previewType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getPreviewType()
     {
         if (array_key_exists("previewType", $this->_propDict)) {
@@ -73,7 +74,7 @@ class PlannerTaskDetails extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the previewType
     * This sets the type of preview that shows up on the task. Possible values are: automatic, noPreview, checklist, description, reference. When set to automatic the displayed preview is chosen by the app viewing the task.
@@ -87,7 +88,7 @@ class PlannerTaskDetails extends Entity
         $this->_propDict["previewType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the references
     * The collection of references on the task.
@@ -106,7 +107,7 @@ class PlannerTaskDetails extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the references
     * The collection of references on the task.
@@ -120,7 +121,7 @@ class PlannerTaskDetails extends Entity
         $this->_propDict["references"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the checklist
     * The collection of checklist items on the task.
@@ -139,7 +140,7 @@ class PlannerTaskDetails extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the checklist
     * The collection of checklist items on the task.
@@ -153,5 +154,5 @@ class PlannerTaskDetails extends Entity
         $this->_propDict["checklist"] = $val;
         return $this;
     }
-    
+
 }

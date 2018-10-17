@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * Operation File
 * PHP version 7
 *
@@ -26,11 +26,12 @@ namespace Microsoft\Graph\Model;
 */
 class Operation extends Entity
 {
-    /**
-    * Gets the status
-    *
-    * @return OperationStatus The status
-    */
+	/**
+	 * Gets the status
+	 *
+	 * @return OperationStatus The status
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getStatus()
     {
         if (array_key_exists("status", $this->_propDict)) {
@@ -43,7 +44,7 @@ class Operation extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the status
     *
@@ -56,7 +57,7 @@ class Operation extends Entity
         $this->_propDict["status"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the createdDateTime
     *
@@ -74,7 +75,7 @@ class Operation extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the createdDateTime
     *
@@ -87,7 +88,7 @@ class Operation extends Entity
         $this->_propDict["createdDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the lastActionDateTime
     *
@@ -105,7 +106,7 @@ class Operation extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastActionDateTime
     *
@@ -118,5 +119,5 @@ class Operation extends Entity
         $this->_propDict["lastActionDateTime"] = $val;
         return $this;
     }
-    
+
 }

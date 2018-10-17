@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * DeviceManagement File
 * PHP version 7
 *
@@ -26,12 +26,13 @@ namespace Microsoft\Graph\Model;
 */
 class DeviceManagement extends Entity
 {
-    /**
-    * Gets the subscriptionState
-    * Tenant mobile device management subscription state. Possible values are: pending, active, warning, disabled, deleted, blocked, lockedOut.
-    *
-    * @return DeviceManagementSubscriptionState The subscriptionState
-    */
+	/**
+	 * Gets the subscriptionState
+	 * Tenant mobile device management subscription state. Possible values are: pending, active, warning, disabled, deleted, blocked, lockedOut.
+	 *
+	 * @return DeviceManagementSubscriptionState The subscriptionState
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getSubscriptionState()
     {
         if (array_key_exists("subscriptionState", $this->_propDict)) {
@@ -44,7 +45,7 @@ class DeviceManagement extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the subscriptionState
     * Tenant mobile device management subscription state. Possible values are: pending, active, warning, disabled, deleted, blocked, lockedOut.
@@ -58,7 +59,7 @@ class DeviceManagement extends Entity
         $this->_propDict["subscriptionState"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the settings
     *
@@ -76,7 +77,7 @@ class DeviceManagement extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the settings
     *
@@ -89,7 +90,7 @@ class DeviceManagement extends Entity
         $this->_propDict["settings"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the intuneBrand
     *
@@ -107,7 +108,7 @@ class DeviceManagement extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the intuneBrand
     *
@@ -120,9 +121,9 @@ class DeviceManagement extends Entity
         $this->_propDict["intuneBrand"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the termsAndConditions
      *
      * @return array The termsAndConditions
@@ -135,8 +136,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the termsAndConditions
     *
     * @param TermsAndConditions $val The termsAndConditions
@@ -148,7 +149,7 @@ class DeviceManagement extends Entity
 		$this->_propDict["termsAndConditions"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the applePushNotificationCertificate
     *
@@ -166,7 +167,7 @@ class DeviceManagement extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the applePushNotificationCertificate
     *
@@ -179,7 +180,7 @@ class DeviceManagement extends Entity
         $this->_propDict["applePushNotificationCertificate"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the managedDeviceOverview
     *
@@ -197,7 +198,7 @@ class DeviceManagement extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the managedDeviceOverview
     *
@@ -210,9 +211,9 @@ class DeviceManagement extends Entity
         $this->_propDict["managedDeviceOverview"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the detectedApps
      *
      * @return array The detectedApps
@@ -225,8 +226,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the detectedApps
     *
     * @param DetectedApp $val The detectedApps
@@ -238,9 +239,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["detectedApps"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the managedDevices
      *
      * @return array The managedDevices
@@ -253,8 +254,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the managedDevices
     *
     * @param ManagedDevice $val The managedDevices
@@ -266,9 +267,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["managedDevices"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the deviceConfigurations
      *
      * @return array The deviceConfigurations
@@ -281,8 +282,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the deviceConfigurations
     *
     * @param DeviceConfiguration $val The deviceConfigurations
@@ -294,9 +295,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["deviceConfigurations"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the deviceCompliancePolicies
      *
      * @return array The deviceCompliancePolicies
@@ -309,8 +310,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the deviceCompliancePolicies
     *
     * @param DeviceCompliancePolicy $val The deviceCompliancePolicies
@@ -322,7 +323,7 @@ class DeviceManagement extends Entity
 		$this->_propDict["deviceCompliancePolicies"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the softwareUpdateStatusSummary
     *
@@ -340,7 +341,7 @@ class DeviceManagement extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the softwareUpdateStatusSummary
     *
@@ -353,7 +354,7 @@ class DeviceManagement extends Entity
         $this->_propDict["softwareUpdateStatusSummary"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the deviceCompliancePolicyDeviceStateSummary
     *
@@ -371,7 +372,7 @@ class DeviceManagement extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the deviceCompliancePolicyDeviceStateSummary
     *
@@ -384,9 +385,9 @@ class DeviceManagement extends Entity
         $this->_propDict["deviceCompliancePolicyDeviceStateSummary"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the deviceCompliancePolicySettingStateSummaries
      *
      * @return array The deviceCompliancePolicySettingStateSummaries
@@ -399,8 +400,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the deviceCompliancePolicySettingStateSummaries
     *
     * @param DeviceCompliancePolicySettingStateSummary $val The deviceCompliancePolicySettingStateSummaries
@@ -412,7 +413,7 @@ class DeviceManagement extends Entity
 		$this->_propDict["deviceCompliancePolicySettingStateSummaries"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the deviceConfigurationDeviceStateSummaries
     *
@@ -430,7 +431,7 @@ class DeviceManagement extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the deviceConfigurationDeviceStateSummaries
     *
@@ -443,9 +444,9 @@ class DeviceManagement extends Entity
         $this->_propDict["deviceConfigurationDeviceStateSummaries"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the iosUpdateStatuses
      *
      * @return array The iosUpdateStatuses
@@ -458,8 +459,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the iosUpdateStatuses
     *
     * @param IosUpdateDeviceStatus $val The iosUpdateStatuses
@@ -471,9 +472,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["iosUpdateStatuses"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the deviceCategories
      *
      * @return array The deviceCategories
@@ -486,8 +487,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the deviceCategories
     *
     * @param DeviceCategory $val The deviceCategories
@@ -499,9 +500,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["deviceCategories"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the exchangeConnectors
      *
      * @return array The exchangeConnectors
@@ -514,8 +515,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the exchangeConnectors
     *
     * @param DeviceManagementExchangeConnector $val The exchangeConnectors
@@ -527,9 +528,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["exchangeConnectors"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the deviceEnrollmentConfigurations
      *
      * @return array The deviceEnrollmentConfigurations
@@ -542,8 +543,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the deviceEnrollmentConfigurations
     *
     * @param DeviceEnrollmentConfiguration $val The deviceEnrollmentConfigurations
@@ -555,7 +556,7 @@ class DeviceManagement extends Entity
 		$this->_propDict["deviceEnrollmentConfigurations"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the conditionalAccessSettings
     *
@@ -573,7 +574,7 @@ class DeviceManagement extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the conditionalAccessSettings
     *
@@ -586,9 +587,9 @@ class DeviceManagement extends Entity
         $this->_propDict["conditionalAccessSettings"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the mobileThreatDefenseConnectors
      *
      * @return array The mobileThreatDefenseConnectors
@@ -601,8 +602,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the mobileThreatDefenseConnectors
     *
     * @param MobileThreatDefenseConnector $val The mobileThreatDefenseConnectors
@@ -614,9 +615,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["mobileThreatDefenseConnectors"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the deviceManagementPartners
      *
      * @return array The deviceManagementPartners
@@ -629,8 +630,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the deviceManagementPartners
     *
     * @param DeviceManagementPartner $val The deviceManagementPartners
@@ -642,9 +643,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["deviceManagementPartners"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the notificationMessageTemplates
      *
      * @return array The notificationMessageTemplates
@@ -657,8 +658,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the notificationMessageTemplates
     *
     * @param NotificationMessageTemplate $val The notificationMessageTemplates
@@ -670,9 +671,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["notificationMessageTemplates"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the roleDefinitions
      *
      * @return array The roleDefinitions
@@ -685,8 +686,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the roleDefinitions
     *
     * @param RoleDefinition $val The roleDefinitions
@@ -698,9 +699,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["roleDefinitions"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the roleAssignments
      *
      * @return array The roleAssignments
@@ -713,8 +714,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the roleAssignments
     *
     * @param DeviceAndAppManagementRoleAssignment $val The roleAssignments
@@ -726,9 +727,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["roleAssignments"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the resourceOperations
      *
      * @return array The resourceOperations
@@ -741,8 +742,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the resourceOperations
     *
     * @param ResourceOperation $val The resourceOperations
@@ -754,9 +755,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["resourceOperations"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the telecomExpenseManagementPartners
      *
      * @return array The telecomExpenseManagementPartners
@@ -769,8 +770,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the telecomExpenseManagementPartners
     *
     * @param TelecomExpenseManagementPartner $val The telecomExpenseManagementPartners
@@ -782,9 +783,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["telecomExpenseManagementPartners"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the remoteAssistancePartners
      *
      * @return array The remoteAssistancePartners
@@ -797,8 +798,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the remoteAssistancePartners
     *
     * @param RemoteAssistancePartner $val The remoteAssistancePartners
@@ -810,9 +811,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["remoteAssistancePartners"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the windowsInformationProtectionAppLearningSummaries
      *
      * @return array The windowsInformationProtectionAppLearningSummaries
@@ -825,8 +826,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the windowsInformationProtectionAppLearningSummaries
     *
     * @param WindowsInformationProtectionAppLearningSummary $val The windowsInformationProtectionAppLearningSummaries
@@ -838,9 +839,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["windowsInformationProtectionAppLearningSummaries"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the windowsInformationProtectionNetworkLearningSummaries
      *
      * @return array The windowsInformationProtectionNetworkLearningSummaries
@@ -853,8 +854,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the windowsInformationProtectionNetworkLearningSummaries
     *
     * @param WindowsInformationProtectionNetworkLearningSummary $val The windowsInformationProtectionNetworkLearningSummaries
@@ -866,9 +867,9 @@ class DeviceManagement extends Entity
 		$this->_propDict["windowsInformationProtectionNetworkLearningSummaries"] = $val;
         return $this;
     }
-    
 
-     /** 
+
+     /**
      * Gets the troubleshootingEvents
      *
      * @return array The troubleshootingEvents
@@ -881,8 +882,8 @@ class DeviceManagement extends Entity
             return null;
         }
     }
-    
-    /** 
+
+    /**
     * Sets the troubleshootingEvents
     *
     * @param DeviceManagementTroubleshootingEvent $val The troubleshootingEvents
@@ -894,5 +895,5 @@ class DeviceManagement extends Entity
 		$this->_propDict["troubleshootingEvents"] = $val;
         return $this;
     }
-    
+
 }

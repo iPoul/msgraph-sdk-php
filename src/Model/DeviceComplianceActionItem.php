@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * DeviceComplianceActionItem File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class DeviceComplianceActionItem extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the gracePeriodHours
     * Number of hours to wait till the action will be enforced. Valid values 0 to 8760
@@ -54,13 +54,14 @@ class DeviceComplianceActionItem extends Entity
         $this->_propDict["gracePeriodHours"] = intval($val);
         return $this;
     }
-    
-    /**
-    * Gets the actionType
-    * What action to take. Possible values are: noAction, notification, block, retire, wipe, removeResourceAccessProfiles.
-    *
-    * @return DeviceComplianceActionType The actionType
-    */
+
+	/**
+	 * Gets the actionType
+	 * What action to take. Possible values are: noAction, notification, block, retire, wipe, removeResourceAccessProfiles.
+	 *
+	 * @return DeviceComplianceActionType The actionType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getActionType()
     {
         if (array_key_exists("actionType", $this->_propDict)) {
@@ -73,7 +74,7 @@ class DeviceComplianceActionItem extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the actionType
     * What action to take. Possible values are: noAction, notification, block, retire, wipe, removeResourceAccessProfiles.
@@ -87,7 +88,7 @@ class DeviceComplianceActionItem extends Entity
         $this->_propDict["actionType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the notificationTemplateId
     * What notification Message template to use
@@ -102,7 +103,7 @@ class DeviceComplianceActionItem extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the notificationTemplateId
     * What notification Message template to use
@@ -116,7 +117,7 @@ class DeviceComplianceActionItem extends Entity
         $this->_propDict["notificationTemplateId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the notificationMessageCCList
     * A list of group IDs to speicify who to CC this notification message to.
@@ -131,7 +132,7 @@ class DeviceComplianceActionItem extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the notificationMessageCCList
     * A list of group IDs to speicify who to CC this notification message to.
@@ -145,5 +146,5 @@ class DeviceComplianceActionItem extends Entity
         $this->_propDict["notificationMessageCCList"] = $val;
         return $this;
     }
-    
+
 }

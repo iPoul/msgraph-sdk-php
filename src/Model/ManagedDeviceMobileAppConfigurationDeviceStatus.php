@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * ManagedDeviceMobileAppConfigurationDeviceStatus File
 * PHP version 7
 *
@@ -40,7 +40,7 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the deviceDisplayName
     * Device name of the DevicePolicyStatus.
@@ -54,7 +54,7 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
         $this->_propDict["deviceDisplayName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the userName
     * The User Name that is being reported
@@ -69,7 +69,7 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the userName
     * The User Name that is being reported
@@ -83,7 +83,7 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
         $this->_propDict["userName"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the deviceModel
     * The device model that is being reported
@@ -98,7 +98,7 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the deviceModel
     * The device model that is being reported
@@ -112,7 +112,7 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
         $this->_propDict["deviceModel"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the complianceGracePeriodExpirationDateTime
     * The DateTime when device compliance grace period expires
@@ -131,7 +131,7 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the complianceGracePeriodExpirationDateTime
     * The DateTime when device compliance grace period expires
@@ -145,13 +145,14 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
         $this->_propDict["complianceGracePeriodExpirationDateTime"] = $val;
         return $this;
     }
-    
-    /**
-    * Gets the status
-    * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
-    *
-    * @return ComplianceStatus The status
-    */
+
+	/**
+	 * Gets the status
+	 * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
+	 *
+	 * @return ComplianceStatus The status
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getStatus()
     {
         if (array_key_exists("status", $this->_propDict)) {
@@ -164,7 +165,7 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the status
     * Compliance status of the policy report. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant, error, conflict.
@@ -178,7 +179,7 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
         $this->_propDict["status"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the lastReportedDateTime
     * Last modified date time of the policy report.
@@ -197,7 +198,7 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the lastReportedDateTime
     * Last modified date time of the policy report.
@@ -211,7 +212,7 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
         $this->_propDict["lastReportedDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the userPrincipalName
     * UserPrincipalName.
@@ -226,7 +227,7 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the userPrincipalName
     * UserPrincipalName.
@@ -240,5 +241,5 @@ class ManagedDeviceMobileAppConfigurationDeviceStatus extends Entity
         $this->_propDict["userPrincipalName"] = $val;
         return $this;
     }
-    
+
 }

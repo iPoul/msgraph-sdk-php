@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * EducationStudent File
 * PHP version 7
 *
@@ -115,12 +115,13 @@ class EducationStudent extends Entity
          return $this;
     }
 
-    /**
-    * Gets the gender
-    * Possible values are: female, male, other, unkownFutureValue.
-    *
-    * @return EducationGender The gender
-    */
+	/**
+	 * Gets the gender
+	 * Possible values are: female, male, other, unkownFutureValue.
+	 *
+	 * @return EducationGender The gender
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getGender()
     {
         if (array_key_exists("gender", $this->_propDict)) {

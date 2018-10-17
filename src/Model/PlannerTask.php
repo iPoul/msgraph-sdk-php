@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * PlannerTask File
 * PHP version 7
 *
@@ -44,7 +44,7 @@ class PlannerTask extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the createdBy
     * Identity of the user that created the task.
@@ -58,7 +58,7 @@ class PlannerTask extends Entity
         $this->_propDict["createdBy"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the planId
     * Plan ID to which the task belongs.
@@ -73,7 +73,7 @@ class PlannerTask extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the planId
     * Plan ID to which the task belongs.
@@ -87,7 +87,7 @@ class PlannerTask extends Entity
         $this->_propDict["planId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the bucketId
     * Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case sensitive. Format validation is done on the service.
@@ -102,7 +102,7 @@ class PlannerTask extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the bucketId
     * Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case sensitive. Format validation is done on the service.
@@ -116,7 +116,7 @@ class PlannerTask extends Entity
         $this->_propDict["bucketId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the title
     * Title of the task.
@@ -131,7 +131,7 @@ class PlannerTask extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the title
     * Title of the task.
@@ -145,7 +145,7 @@ class PlannerTask extends Entity
         $this->_propDict["title"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the orderHint
     * Hint used to order items of this type in a list view. The format is defined as outlined here.
@@ -160,7 +160,7 @@ class PlannerTask extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the orderHint
     * Hint used to order items of this type in a list view. The format is defined as outlined here.
@@ -174,7 +174,7 @@ class PlannerTask extends Entity
         $this->_propDict["orderHint"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the assigneePriority
     * Hint used to order items of this type in a list view. The format is defined as outlined here.
@@ -189,7 +189,7 @@ class PlannerTask extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the assigneePriority
     * Hint used to order items of this type in a list view. The format is defined as outlined here.
@@ -203,7 +203,7 @@ class PlannerTask extends Entity
         $this->_propDict["assigneePriority"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the percentComplete
     * Percentage of task completion. When set to 100, the task is considered completed.
@@ -218,7 +218,7 @@ class PlannerTask extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the percentComplete
     * Percentage of task completion. When set to 100, the task is considered completed.
@@ -232,7 +232,7 @@ class PlannerTask extends Entity
         $this->_propDict["percentComplete"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the startDateTime
     * Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
@@ -251,7 +251,7 @@ class PlannerTask extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the startDateTime
     * Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
@@ -265,7 +265,7 @@ class PlannerTask extends Entity
         $this->_propDict["startDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the createdDateTime
     * Read-only. Date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
@@ -284,7 +284,7 @@ class PlannerTask extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the createdDateTime
     * Read-only. Date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
@@ -298,7 +298,7 @@ class PlannerTask extends Entity
         $this->_propDict["createdDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the dueDateTime
     * Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
@@ -317,7 +317,7 @@ class PlannerTask extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the dueDateTime
     * Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
@@ -331,7 +331,7 @@ class PlannerTask extends Entity
         $this->_propDict["dueDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the hasDescription
     * Read-only. Value is true if the details object of the task has a non-empty description and false otherwise.
@@ -346,7 +346,7 @@ class PlannerTask extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the hasDescription
     * Read-only. Value is true if the details object of the task has a non-empty description and false otherwise.
@@ -360,13 +360,14 @@ class PlannerTask extends Entity
         $this->_propDict["hasDescription"] = boolval($val);
         return $this;
     }
-    
-    /**
-    * Gets the previewType
-    * This sets the type of preview that shows up on the task. Possible values are: automatic, noPreview, checklist, description, reference.
-    *
-    * @return PlannerPreviewType The previewType
-    */
+
+	/**
+	 * Gets the previewType
+	 * This sets the type of preview that shows up on the task. Possible values are: automatic, noPreview, checklist, description, reference.
+	 *
+	 * @return PlannerPreviewType The previewType
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getPreviewType()
     {
         if (array_key_exists("previewType", $this->_propDict)) {
@@ -379,7 +380,7 @@ class PlannerTask extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the previewType
     * This sets the type of preview that shows up on the task. Possible values are: automatic, noPreview, checklist, description, reference.
@@ -393,7 +394,7 @@ class PlannerTask extends Entity
         $this->_propDict["previewType"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the completedDateTime
     * Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
@@ -412,7 +413,7 @@ class PlannerTask extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the completedDateTime
     * Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
@@ -426,7 +427,7 @@ class PlannerTask extends Entity
         $this->_propDict["completedDateTime"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the completedBy
     * Identity of the user that completed the task.
@@ -445,7 +446,7 @@ class PlannerTask extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the completedBy
     * Identity of the user that completed the task.
@@ -459,7 +460,7 @@ class PlannerTask extends Entity
         $this->_propDict["completedBy"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the referenceCount
     * Number of external references that exist on the task.
@@ -474,7 +475,7 @@ class PlannerTask extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the referenceCount
     * Number of external references that exist on the task.
@@ -488,7 +489,7 @@ class PlannerTask extends Entity
         $this->_propDict["referenceCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the checklistItemCount
     * Number of checklist items that are present on the task.
@@ -503,7 +504,7 @@ class PlannerTask extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the checklistItemCount
     * Number of checklist items that are present on the task.
@@ -517,7 +518,7 @@ class PlannerTask extends Entity
         $this->_propDict["checklistItemCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the activeChecklistItemCount
     * Number of checklist items with value set to 'false', representing incomplete items.
@@ -532,7 +533,7 @@ class PlannerTask extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the activeChecklistItemCount
     * Number of checklist items with value set to 'false', representing incomplete items.
@@ -546,7 +547,7 @@ class PlannerTask extends Entity
         $this->_propDict["activeChecklistItemCount"] = intval($val);
         return $this;
     }
-    
+
     /**
     * Gets the appliedCategories
     * The categories to which the task has been applied. See applied Categories for possible values.
@@ -565,7 +566,7 @@ class PlannerTask extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the appliedCategories
     * The categories to which the task has been applied. See applied Categories for possible values.
@@ -579,7 +580,7 @@ class PlannerTask extends Entity
         $this->_propDict["appliedCategories"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the assignments
     * The set of assignees the task is assigned to.
@@ -598,7 +599,7 @@ class PlannerTask extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the assignments
     * The set of assignees the task is assigned to.
@@ -612,7 +613,7 @@ class PlannerTask extends Entity
         $this->_propDict["assignments"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the conversationThreadId
     * Thread ID of the conversation on the task. This is the ID of the conversation thread object created in the group.
@@ -627,7 +628,7 @@ class PlannerTask extends Entity
             return null;
         }
     }
-    
+
     /**
     * Sets the conversationThreadId
     * Thread ID of the conversation on the task. This is the ID of the conversation thread object created in the group.
@@ -641,7 +642,7 @@ class PlannerTask extends Entity
         $this->_propDict["conversationThreadId"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the details
     * Read-only. Nullable. Additional details about the task.
@@ -660,7 +661,7 @@ class PlannerTask extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the details
     * Read-only. Nullable. Additional details about the task.
@@ -674,7 +675,7 @@ class PlannerTask extends Entity
         $this->_propDict["details"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the assignedToTaskBoardFormat
     * Read-only. Nullable. Used to render the task correctly in the task board view when grouped by assignedTo.
@@ -693,7 +694,7 @@ class PlannerTask extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the assignedToTaskBoardFormat
     * Read-only. Nullable. Used to render the task correctly in the task board view when grouped by assignedTo.
@@ -707,7 +708,7 @@ class PlannerTask extends Entity
         $this->_propDict["assignedToTaskBoardFormat"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the progressTaskBoardFormat
     * Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.
@@ -726,7 +727,7 @@ class PlannerTask extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the progressTaskBoardFormat
     * Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.
@@ -740,7 +741,7 @@ class PlannerTask extends Entity
         $this->_propDict["progressTaskBoardFormat"] = $val;
         return $this;
     }
-    
+
     /**
     * Gets the bucketTaskBoardFormat
     * Read-only. Nullable. Used to render the task correctly in the task board view when grouped by bucket.
@@ -759,7 +760,7 @@ class PlannerTask extends Entity
         }
         return null;
     }
-    
+
     /**
     * Sets the bucketTaskBoardFormat
     * Read-only. Nullable. Used to render the task correctly in the task board view when grouped by bucket.
@@ -773,5 +774,5 @@ class PlannerTask extends Entity
         $this->_propDict["bucketTaskBoardFormat"] = $val;
         return $this;
     }
-    
+
 }

@@ -1,7 +1,7 @@
 <?php
 /**
 * Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-* 
+*
 * BitLockerRemovableDrivePolicy File
 * PHP version 7
 *
@@ -25,13 +25,13 @@ namespace Microsoft\Graph\Model;
 */
 class BitLockerRemovableDrivePolicy extends Entity
 {
-
-    /**
-    * Gets the encryptionMethod
-    * Select the encryption method for removable  drives. Possible values are: aesCbc128, aesCbc256, xtsAes128, xtsAes256.
-    *
-    * @return BitLockerEncryptionMethod The encryptionMethod
-    */
+	/**
+	 * Gets the encryptionMethod
+	 * Select the encryption method for removable  drives. Possible values are: aesCbc128, aesCbc256, xtsAes128, xtsAes256.
+	 *
+	 * @return BitLockerEncryptionMethod The encryptionMethod
+	 * @throws \Microsoft\Graph\Exception\GraphException
+	 */
     public function getEncryptionMethod()
     {
         if (array_key_exists("encryptionMethod", $this->_propDict)) {
